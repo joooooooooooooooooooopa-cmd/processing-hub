@@ -1,0 +1,1652 @@
+{
+  "terms": [
+    {
+      "term": "Chargeback",
+      "term_ru": "Чарджбэк",
+      "category": "disputes",
+      "definition": "Принудительный возврат средств по транзакции, инициированный банком-эмитентом держателя карты после подачи спора.",
+      "example": "The merchant received a chargeback for order #4521 under reason code 10.4 (other fraud).",
+      "related": []
+    },
+    {
+      "term": "Retrieval request",
+      "term_ru": "Запрос на получение информации",
+      "category": "disputes",
+      "definition": "Предварительный запрос от банка-эмитента на предоставление документации по транзакции до официального открытия чарджбэка.",
+      "example": "Respond to retrieval requests within 20 days to prevent automatic chargebacks.",
+      "related": []
+    },
+    {
+      "term": "Representment",
+      "term_ru": "Повторное представление",
+      "category": "disputes",
+      "definition": "Процесс повторного представления оспоренной транзакции эмитенту с доказательной базой для отмены чарджбэка.",
+      "example": "Our representment included signed delivery confirmation and 3DS authentication logs.",
+      "related": []
+    },
+    {
+      "term": "Friendly fraud",
+      "term_ru": "Дружественное мошенничество",
+      "category": "disputes",
+      "definition": "Чарджбэк, поданный реальным держателем карты, который получил товар или услугу, но ложно заявляет о несанкционированности транзакции.",
+      "example": "Friendly fraud accounts for up to 75% of all chargebacks in digital goods verticals.",
+      "related": []
+    },
+    {
+      "term": "Chargeback ratio",
+      "term_ru": "Коэффициент чарджбэков",
+      "category": "disputes",
+      "definition": "Процент транзакций, по которым были инициированы чарджбэки, обычно рассчитывается как отношение чарджбэков к общему числу транзакций за месяц.",
+      "example": "Visa's threshold is 0.9% — exceeding it places the merchant in the VDMP program.",
+      "related": []
+    },
+    {
+      "term": "Ethoca alert",
+      "term_ru": "Оповещение Ethoca",
+      "category": "disputes",
+      "definition": "Уведомление в реальном времени от сети Ethoca (Mastercard), позволяющее мерчанту оформить возврат до официального чарджбэка.",
+      "example": "We deflected 340 chargebacks last month using Ethoca alerts.",
+      "related": []
+    },
+    {
+      "term": "Verifi alert",
+      "term_ru": "Оповещение Verifi",
+      "category": "disputes",
+      "definition": "Уведомление о споре от сети Verifi (CDRN) Visa, позволяющее мерчанту проактивно урегулировать конфликт до чарджбэка.",
+      "example": "Verifi alerts cover roughly 40% of US issuer volume.",
+      "related": []
+    },
+    {
+      "term": "Dispute lifecycle",
+      "term_ru": "Жизненный цикл спора",
+      "category": "disputes",
+      "definition": "Полная последовательность этапов прохождения платёжного спора: запрос, первый чарджбэк, повторное представление, предарбитраж, арбитраж.",
+      "example": "Understanding the dispute lifecycle helps optimize win rates at each stage.",
+      "related": []
+    },
+    {
+      "term": "Pre-arbitration",
+      "term_ru": "Предарбитраж",
+      "category": "disputes",
+      "definition": "Этап второго цикла спора, на котором эмитент оспаривает повторное представление эквайера, требуя дополнительных доказательств.",
+      "example": "We lost at pre-arbitration because the original evidence package was incomplete.",
+      "related": []
+    },
+    {
+      "term": "Arbitration",
+      "term_ru": "Арбитраж",
+      "category": "disputes",
+      "definition": "Финальная стадия спора в платёжной системе, где Visa или Mastercard выносят обязательное решение с существенными штрафами для проигравшей стороны.",
+      "example": "Arbitration filing fees can reach $500, so only escalate high-value disputes.",
+      "related": []
+    },
+    {
+      "term": "Reason code",
+      "term_ru": "Код причины",
+      "category": "disputes",
+      "definition": "Стандартизированный буквенно-цифровой код платёжной системы, определяющий конкретную причину чарджбэка.",
+      "example": "Visa reason code 13.1 indicates merchandise/services not received.",
+      "related": []
+    },
+    {
+      "term": "Excessive chargeback program",
+      "term_ru": "Программа избыточных чарджбэков",
+      "category": "disputes",
+      "definition": "Программа мониторинга (VDMP Visa, ECM Mastercard), налагающая штрафы и ограничения на мерчантов, превысивших пороги чарджбэков.",
+      "example": "Entering VDMP Stage 3 results in fines of $25,000/month plus per-chargeback penalties.",
+      "related": []
+    },
+    {
+      "term": "Fraud chargeback",
+      "term_ru": "Мошеннический чарджбэк",
+      "category": "disputes",
+      "definition": "Чарджбэк, поданный по коду причины, связанному с мошенничеством, — держатель карты заявляет о несанкционированной транзакции.",
+      "example": "Fraud chargebacks under Visa 10.4 require proof of cardholder authentication.",
+      "related": []
+    },
+    {
+      "term": "Non-fraud chargeback",
+      "term_ru": "Немошеннический чарджбэк",
+      "category": "disputes",
+      "definition": "Чарджбэк по причинам, не связанным с мошенничеством: товар не получен, дефектный товар, ошибки обработки.",
+      "example": "Non-fraud chargebacks often have higher representment win rates due to clearer evidence.",
+      "related": []
+    },
+    {
+      "term": "Chargeback management",
+      "term_ru": "Управление чарджбэками",
+      "category": "disputes",
+      "definition": "Комплекс стратегий, инструментов и процессов для предотвращения, отклонения и оспаривания чарджбэков.",
+      "example": "Effective chargeback management combines alerts, representment, and root cause analysis.",
+      "related": []
+    },
+    {
+      "term": "Deflection",
+      "term_ru": "Дефлекция",
+      "category": "disputes",
+      "definition": "Практика урегулирования спора до его превращения в формальный чарджбэк — через оповещения или проактивные возвраты.",
+      "example": "Our deflection rate improved to 60% after integrating Ethoca and Verifi alerts.",
+      "related": []
+    },
+    {
+      "term": "RDR (Rapid Dispute Resolution)",
+      "term_ru": "Быстрое разрешение споров (RDR)",
+      "category": "disputes",
+      "definition": "Автоматизированная система Visa, разрешающая споры на уровне эмитента по заранее заданным правилам мерчанта.",
+      "example": "RDR rules can auto-refund transactions under $50 to avoid chargeback fees.",
+      "related": []
+    },
+    {
+      "term": "CDRN (Cardholder Dispute Resolution Network)",
+      "term_ru": "Сеть разрешения споров держателей карт",
+      "category": "disputes",
+      "definition": "Сеть Visa на базе Verifi, доставляющая мерчантам уведомления о спорах в реальном времени для урегулирования до начала цикла чарджбэка.",
+      "example": "CDRN notifications arrive within minutes of the cardholder contacting their bank.",
+      "related": []
+    },
+    {
+      "term": "TC40",
+      "term_ru": "TC40",
+      "category": "disputes",
+      "definition": "Отчёт Visa о мошенничестве (Transaction Component 40), подаваемый эмитентами для отметки подтверждённых мошеннических транзакций.",
+      "example": "TC40 filings don't always result in chargebacks but signal fraud patterns.",
+      "related": []
+    },
+    {
+      "term": "SAFE report",
+      "term_ru": "Отчёт SAFE",
+      "category": "disputes",
+      "definition": "Механизм Mastercard для отслеживания подтверждённого мошенничества (System to Avoid Fraud Effectively), аналог TC40 от Visa.",
+      "example": "Monitor SAFE reports to identify compromised BIN ranges early.",
+      "related": []
+    },
+    {
+      "term": "First chargeback rights",
+      "term_ru": "Право первого чарджбэка",
+      "category": "disputes",
+      "definition": "Первоначальное право эмитента подать чарджбэк по транзакции в рамках сроков, установленных платёжной системой.",
+      "example": "First chargeback rights typically expire 120 days from the transaction date.",
+      "related": []
+    },
+    {
+      "term": "Second presentment",
+      "term_ru": "Второе представление",
+      "category": "disputes",
+      "definition": "Альтернативное название повторного представления — повторная подача оспоренной транзакции эквайером с доказательствами.",
+      "example": "The second presentment must include all required compelling evidence fields.",
+      "related": []
+    },
+    {
+      "term": "Issuer",
+      "term_ru": "Эмитент",
+      "category": "disputes",
+      "definition": "Финансовое учреждение, выпустившее платёжную карту и ответственное за обработку споров от имени держателя.",
+      "example": "The issuer approved the chargeback based on the cardholder's fraud claim.",
+      "related": []
+    },
+    {
+      "term": "Cardholder dispute",
+      "term_ru": "Спор держателя карты",
+      "category": "disputes",
+      "definition": "Официальная претензия держателя карты к банку-эмитенту по конкретной транзакции в выписке.",
+      "example": "The cardholder dispute was filed 45 days after the purchase date.",
+      "related": []
+    },
+    {
+      "term": "Transaction dispute",
+      "term_ru": "Спор по транзакции",
+      "category": "disputes",
+      "definition": "Разногласие между сторонами относительно правомерности, суммы или условий конкретной платёжной транзакции.",
+      "example": "Transaction disputes must be resolved within scheme-mandated timeframes.",
+      "related": []
+    },
+    {
+      "term": "Win rate",
+      "term_ru": "Процент выигрыша",
+      "category": "disputes",
+      "definition": "Процент повторных представлений, успешно отменяющих чарджбэки в пользу мерчанта.",
+      "example": "Our representment win rate is 42%, above the industry average of 30%.",
+      "related": []
+    },
+    {
+      "term": "Compelling evidence",
+      "term_ru": "Убедительные доказательства",
+      "category": "disputes",
+      "definition": "Документация и данные, представляемые при оспаривании чарджбэка для подтверждения легитимности транзакции: подтверждение доставки, IP-логи, данные устройства.",
+      "example": "Visa CE 3.0 requires matching prior undisputed transactions from the same device.",
+      "related": []
+    },
+    {
+      "term": "Acquirer",
+      "term_ru": "Эквайер",
+      "category": "acquiring",
+      "definition": "Финансовое учреждение, обрабатывающее карточные платежи от имени мерчанта и поддерживающее его связь с платёжными системами.",
+      "example": "The acquirer settles funds to the merchant account within T+2.",
+      "related": []
+    },
+    {
+      "term": "PSP (Payment Service Provider)",
+      "term_ru": "Платёжный провайдер (PSP)",
+      "category": "acquiring",
+      "definition": "Компания, предоставляющая мерчантам технологии и сервисы для приёма электронных платежей, часто агрегирующая несколько платёжных методов.",
+      "example": "The PSP offered card processing, APMs, and crypto payments through a single API.",
+      "related": []
+    },
+    {
+      "term": "Payment gateway",
+      "term_ru": "Платёжный шлюз",
+      "category": "acquiring",
+      "definition": "Технологический сервис, безопасно передающий данные транзакции между мерчантом и эквайером/процессором для авторизации.",
+      "example": "The payment gateway encrypts card data before sending it to the processor.",
+      "related": []
+    },
+    {
+      "term": "Sub-acquiring",
+      "term_ru": "Суб-эквайринг",
+      "category": "acquiring",
+      "definition": "Модель, при которой PSP обрабатывает транзакции под своим MID от имени суб-мерчантов, выступая посредником перед эквайером.",
+      "example": "Sub-acquiring allows quick onboarding but carries higher compliance risk.",
+      "related": []
+    },
+    {
+      "term": "ISO (Independent Sales Organization)",
+      "term_ru": "Независимая торговая организация (ISO)",
+      "category": "acquiring",
+      "definition": "Сторонняя организация, уполномоченная платёжной системой продавать услуги процессинга от имени банка-эквайера.",
+      "example": "The ISO signed 200 new merchants this quarter under their BIN sponsor agreement.",
+      "related": []
+    },
+    {
+      "term": "Payfac (Payment Facilitator)",
+      "term_ru": "Платёжный фасилитатор",
+      "category": "acquiring",
+      "definition": "Модель, при которой главный мерчант подключает и управляет суб-мерчантами под своим аккаунтом, выполняя андеррайтинг и расчёты.",
+      "example": "Becoming a payfac requires registration with card schemes and robust KYC processes.",
+      "related": []
+    },
+    {
+      "term": "Merchant account",
+      "term_ru": "Мерчант-аккаунт",
+      "category": "acquiring",
+      "definition": "Специализированный банковский счёт, позволяющий бизнесу принимать карточные платежи и хранящий средства до расчёта.",
+      "example": "The merchant account was approved after completing due diligence review.",
+      "related": []
+    },
+    {
+      "term": "MID (Merchant ID)",
+      "term_ru": "Идентификатор мерчанта (MID)",
+      "category": "acquiring",
+      "definition": "Уникальный идентификатор, присвоенный мерчанту эквайером для отслеживания всех транзакций по данному аккаунту.",
+      "example": "Each website should have a separate MID for proper transaction tracking.",
+      "related": []
+    },
+    {
+      "term": "Merchant of record",
+      "term_ru": "Мерчант-оф-рекорд",
+      "category": "acquiring",
+      "definition": "Юридическое лицо, отображаемое в выписке держателя карты и несущее юридическую ответственность за транзакцию.",
+      "example": "As merchant of record, the payfac assumes liability for sub-merchant chargebacks.",
+      "related": []
+    },
+    {
+      "term": "Payment facilitator",
+      "term_ru": "Платёжный фасилитатор",
+      "category": "acquiring",
+      "definition": "Зарегистрированная организация, упрощающая подключение мерчантов путём обработки платежей от имени суб-мерчантов.",
+      "example": "Stripe and Square operate as payment facilitators for their merchants.",
+      "related": []
+    },
+    {
+      "term": "Processor",
+      "term_ru": "Процессор",
+      "category": "acquiring",
+      "definition": "Компания, выполняющая техническую маршрутизацию и обработку платёжных транзакций между мерчантами, эквайерами и эмитентами.",
+      "example": "The processor routes authorization requests to the issuer within milliseconds.",
+      "related": []
+    },
+    {
+      "term": "Issuer processor",
+      "term_ru": "Процессор эмитента",
+      "category": "acquiring",
+      "definition": "Компания, выполняющая обработку транзакций, авторизацию и управление картами от имени банков-эмитентов.",
+      "example": "The issuer processor handles real-time authorization decisions for the bank.",
+      "related": []
+    },
+    {
+      "term": "Card scheme",
+      "term_ru": "Платёжная система",
+      "category": "acquiring",
+      "definition": "Платёжная сеть (Visa, Mastercard, UnionPay и др.), устанавливающая правила и обеспечивающая инфраструктуру транзакций.",
+      "example": "Card scheme rules dictate chargeback timeframes and interchange categories.",
+      "related": []
+    },
+    {
+      "term": "Settlement",
+      "term_ru": "Расчёт (сеттлмент)",
+      "category": "acquiring",
+      "definition": "Процесс перевода средств от банка-эмитента через платёжную систему и эквайера на счёт мерчанта после клиринга транзакции.",
+      "example": "Settlement occurs T+1 for domestic transactions and T+3 for cross-border.",
+      "related": []
+    },
+    {
+      "term": "Batch processing",
+      "term_ru": "Пакетная обработка",
+      "category": "acquiring",
+      "definition": "Практика сбора и отправки нескольких авторизованных транзакций на расчёт единовременно, обычно в конце дня.",
+      "example": "The terminal sends batch processing at midnight to initiate next-day settlement.",
+      "related": []
+    },
+    {
+      "term": "Authorization",
+      "term_ru": "Авторизация",
+      "category": "acquiring",
+      "definition": "Процесс проверки в реальном времени достаточности средств и соответствия транзакции требованиям безопасности перед её одобрением.",
+      "example": "Authorization took 1.2 seconds including 3DS verification.",
+      "related": []
+    },
+    {
+      "term": "Capture",
+      "term_ru": "Списание (захват)",
+      "category": "acquiring",
+      "definition": "Процесс финализации ранее авторизованной транзакции, подтверждающий перевод средств от эмитента к эквайеру.",
+      "example": "Auto-capture is triggered upon shipment for e-commerce orders.",
+      "related": []
+    },
+    {
+      "term": "Void",
+      "term_ru": "Отмена (войд)",
+      "category": "acquiring",
+      "definition": "Отмена авторизованной транзакции до её захвата или расчёта, снимающая блокировку средств на карте.",
+      "example": "Void the transaction immediately if the customer cancels before shipment.",
+      "related": []
+    },
+    {
+      "term": "Refund",
+      "term_ru": "Возврат (рефанд)",
+      "category": "acquiring",
+      "definition": "Возврат средств держателю карты после расчёта, обрабатываемый как новая кредитная транзакция по исходной покупке.",
+      "example": "Full refunds typically appear on the cardholder's statement within 5-10 business days.",
+      "related": []
+    },
+    {
+      "term": "Decline",
+      "term_ru": "Отклонение",
+      "category": "acquiring",
+      "definition": "Отказ в проведении платёжной транзакции со стороны эмитента, процессора или системы рисков.",
+      "example": "The decline rate spiked to 35% after the issuer flagged the MCC as high-risk.",
+      "related": []
+    },
+    {
+      "term": "Soft decline",
+      "term_ru": "Мягкое отклонение",
+      "category": "acquiring",
+      "definition": "Временное отклонение транзакции, которое может быть успешным при повторной попытке — часто из-за нехватки средств или таймаута.",
+      "example": "Soft declines with code 51 (insufficient funds) can be retried after 24 hours.",
+      "related": []
+    },
+    {
+      "term": "Hard decline",
+      "term_ru": "Жёсткое отклонение",
+      "category": "acquiring",
+      "definition": "Окончательное отклонение транзакции, не подлежащее повторной попытке — из-за невалидного номера карты, истёкшего срока или блокировки.",
+      "example": "Do not retry hard declines — repeated attempts may trigger scheme penalties.",
+      "related": []
+    },
+    {
+      "term": "Approval rate",
+      "term_ru": "Уровень одобрения",
+      "category": "acquiring",
+      "definition": "Процент поданных транзакций, получивших успешную авторизацию от эмитента.",
+      "example": "Switching to local acquiring improved our approval rate from 72% to 89%.",
+      "related": []
+    },
+    {
+      "term": "BIN sponsorship",
+      "term_ru": "BIN-спонсорство",
+      "category": "acquiring",
+      "definition": "Соглашение, при котором лицензированный банк (BIN-спонсор) позволяет небанковской организации процессировать транзакции под его BIN.",
+      "example": "The fintech obtained BIN sponsorship to launch its payfac model in the EU.",
+      "related": []
+    },
+    {
+      "term": "Cross-border acquiring",
+      "term_ru": "Трансграничный эквайринг",
+      "category": "acquiring",
+      "definition": "Обработка карточных транзакций, при которой эквайер находится в другой стране, нежели банк-эмитент держателя карты.",
+      "example": "Cross-border acquiring adds scheme fees and typically lowers approval rates by 10-15%.",
+      "related": []
+    },
+    {
+      "term": "Descriptor",
+      "term_ru": "Дескриптор",
+      "category": "acquiring",
+      "definition": "Название мерчанта и данные, отображаемые в банковской выписке держателя карты, важные для узнаваемости транзакции.",
+      "example": "Set a clear billing descriptor to reduce 'unrecognized transaction' chargebacks.",
+      "related": []
+    },
+    {
+      "term": "MCC (Merchant Category Code)",
+      "term_ru": "Код категории мерчанта (MCC)",
+      "category": "compliance",
+      "definition": "Четырёхзначный код, присвоенный платёжной системой, классифицирующий тип бизнеса мерчанта и влияющий на интерчейндж и правила.",
+      "example": "MCC 7995 (gambling) requires enhanced due diligence and higher reserves.",
+      "related": []
+    },
+    {
+      "term": "PCI DSS",
+      "term_ru": "Стандарт PCI DSS",
+      "category": "compliance",
+      "definition": "Стандарт безопасности данных индустрии платёжных карт — набор требований для организаций, хранящих или обрабатывающих данные карт.",
+      "example": "PCI DSS Level 1 compliance requires an annual on-site audit by a QSA.",
+      "related": []
+    },
+    {
+      "term": "3DS (3-D Secure)",
+      "term_ru": "3-D Secure (3DS)",
+      "category": "compliance",
+      "definition": "Протокол аутентификации, добавляющий этап верификации при онлайн-платежах и переносящий ответственность за мошенничество с мерчанта на эмитента.",
+      "example": "3DS2 supports frictionless authentication for low-risk transactions.",
+      "related": []
+    },
+    {
+      "term": "SCA (Strong Customer Authentication)",
+      "term_ru": "Строгая аутентификация клиента (SCA)",
+      "category": "compliance",
+      "definition": "Требование PSD2 ЕС об обязательной двухфакторной аутентификации электронных платежей с использованием двух из трёх элементов: знание, владение, присущность.",
+      "example": "SCA exemptions apply to transactions under €30 and trusted beneficiaries.",
+      "related": []
+    },
+    {
+      "term": "KYC (Know Your Customer)",
+      "term_ru": "Знай своего клиента (KYC)",
+      "category": "compliance",
+      "definition": "Регуляторные процедуры, обязывающие бизнес верифицировать личность и оценивать риски клиентов перед установлением деловых отношений.",
+      "example": "KYC for high-risk merchants includes site inspection and UBO verification.",
+      "related": []
+    },
+    {
+      "term": "AML (Anti-Money Laundering)",
+      "term_ru": "Противодействие отмыванию денег (AML)",
+      "category": "compliance",
+      "definition": "Законы, нормативные акты и процедуры, направленные на предотвращение легализации незаконно полученных средств через финансовую систему.",
+      "example": "AML compliance requires ongoing transaction monitoring and suspicious activity reporting.",
+      "related": []
+    },
+    {
+      "term": "CTF (Counter-Terrorism Financing)",
+      "term_ru": "Противодействие финансированию терроризма (CTF)",
+      "category": "compliance",
+      "definition": "Меры и нормативные акты, направленные на выявление, предотвращение и пресечение финансирования террористической деятельности.",
+      "example": "CTF screening cross-references transactions against OFAC and UN sanctions lists.",
+      "related": []
+    },
+    {
+      "term": "Sanction screening",
+      "term_ru": "Санкционный скрининг",
+      "category": "compliance",
+      "definition": "Процесс проверки физических и юридических лиц и транзакций по государственным санкционным спискам.",
+      "example": "Real-time sanction screening is mandatory for all cross-border wire transfers.",
+      "related": []
+    },
+    {
+      "term": "SAR (Suspicious Activity Report)",
+      "term_ru": "Отчёт о подозрительной деятельности (SAR)",
+      "category": "compliance",
+      "definition": "Обязательный отчёт в финансовые органы при обнаружении потенциально подозрительной или преступной активности в транзакциях клиента.",
+      "example": "SARs must be filed within 30 days of detecting suspicious activity.",
+      "related": []
+    },
+    {
+      "term": "STR (Suspicious Transaction Report)",
+      "term_ru": "Отчёт о подозрительной транзакции (STR)",
+      "category": "compliance",
+      "definition": "Отчёт, подаваемый в подразделение финансовой разведки при подозрении на связь транзакции с отмыванием денег или финансированием терроризма.",
+      "example": "An STR was filed after detecting structured deposits just below reporting thresholds.",
+      "related": []
+    },
+    {
+      "term": "CDD (Customer Due Diligence)",
+      "term_ru": "Надлежащая проверка клиента (CDD)",
+      "category": "compliance",
+      "definition": "Стандартный процесс идентификации и верификации клиентов, понимания их бизнеса и оценки рисков отмывания денег.",
+      "example": "CDD includes collecting identity documents, proof of address, and source of funds.",
+      "related": []
+    },
+    {
+      "term": "EDD (Enhanced Due Diligence)",
+      "term_ru": "Углублённая проверка клиента (EDD)",
+      "category": "compliance",
+      "definition": "Дополнительные меры верификации для клиентов высокого риска, включая углублённое изучение деловых связей и происхождения средств.",
+      "example": "EDD is mandatory for PEPs and merchants in high-risk MCC categories.",
+      "related": []
+    },
+    {
+      "term": "PEP (Politically Exposed Person)",
+      "term_ru": "Политически значимое лицо (PEP)",
+      "category": "compliance",
+      "definition": "Лицо, занимающее или занимавшее высокую публичную должность, требующее повышенного контроля из-за рисков коррупции.",
+      "example": "PEP screening must cover the individual, their family members, and close associates.",
+      "related": []
+    },
+    {
+      "term": "Beneficial owner",
+      "term_ru": "Бенефициарный владелец",
+      "category": "compliance",
+      "definition": "Физическое лицо, фактически владеющее или контролирующее юридическое лицо, обычно с долей 25% и более.",
+      "example": "All beneficial owners must be disclosed during merchant onboarding.",
+      "related": []
+    },
+    {
+      "term": "UBO (Ultimate Beneficial Owner)",
+      "term_ru": "Конечный бенефициарный владелец (UBO)",
+      "category": "compliance",
+      "definition": "Физическое лицо в конце цепочки владения, являющееся конечным выгодоприобретателем или контролирующим корпоративную структуру.",
+      "example": "UBO identification requires tracing through all layers of corporate ownership.",
+      "related": []
+    },
+    {
+      "term": "FATF (Financial Action Task Force)",
+      "term_ru": "ФАТФ (Группа разработки финансовых мер)",
+      "category": "compliance",
+      "definition": "Межправительственная организация, устанавливающая международные стандарты борьбы с отмыванием денег и финансированием терроризма.",
+      "example": "FATF grey-listing a country triggers enhanced due diligence for all transactions.",
+      "related": []
+    },
+    {
+      "term": "Wolfsberg principles",
+      "term_ru": "Вольфсбергские принципы",
+      "category": "compliance",
+      "definition": "Руководства по AML, разработанные группой крупнейших мировых банков для управления рисками финансовых преступлений в корреспондентском банкинге.",
+      "example": "Wolfsberg principles guide due diligence for correspondent banking relationships.",
+      "related": []
+    },
+    {
+      "term": "Risk-based approach",
+      "term_ru": "Риск-ориентированный подход",
+      "category": "compliance",
+      "definition": "Методология, при которой уровень комплаенс-мер пропорционален оценённому уровню риска клиента или транзакции.",
+      "example": "A risk-based approach allows simplified KYC for low-value prepaid cards.",
+      "related": []
+    },
+    {
+      "term": "Transaction monitoring",
+      "term_ru": "Мониторинг транзакций",
+      "category": "compliance",
+      "definition": "Автоматизированное наблюдение за транзакциями клиентов для выявления паттернов, указывающих на отмывание денег или мошенничество.",
+      "example": "Transaction monitoring flagged a series of rapid-fire $9,999 deposits.",
+      "related": []
+    },
+    {
+      "term": "Travel rule",
+      "term_ru": "Правило передачи информации (Travel rule)",
+      "category": "compliance",
+      "definition": "Нормативное требование передавать информацию об отправителе и получателе при денежных переводах, превышающих установленные пороги.",
+      "example": "The travel rule applies to wire transfers over $3,000 in the US and €1,000 in the EU.",
+      "related": []
+    },
+    {
+      "term": "GDPR",
+      "term_ru": "Общий регламент защиты данных (GDPR)",
+      "category": "compliance",
+      "definition": "Регламент Европейского союза, регулирующий сбор, обработку и хранение персональных данных резидентов ЕС.",
+      "example": "GDPR requires explicit consent for storing cardholder data beyond transaction processing.",
+      "related": []
+    },
+    {
+      "term": "SOC 2",
+      "term_ru": "SOC 2",
+      "category": "compliance",
+      "definition": "Фреймворк комплаенса от AICPA, оценивающий контроли организации в области безопасности, доступности, целостности обработки и конфиденциальности.",
+      "example": "SOC 2 Type II certification requires a 6-12 month observation period.",
+      "related": []
+    },
+    {
+      "term": "EMV",
+      "term_ru": "EMV",
+      "category": "compliance",
+      "definition": "Глобальный стандарт чиповых платёжных карт (Europay, Mastercard, Visa), обеспечивающий повышенную безопасность по сравнению с магнитной полосой.",
+      "example": "EMV liability shift moved fraud responsibility to the party without chip support.",
+      "related": []
+    },
+    {
+      "term": "Tokenization",
+      "term_ru": "Токенизация",
+      "category": "compliance",
+      "definition": "Замена конфиденциальных данных карты (PAN) уникальным нечувствительным токеном для обработки без раскрытия реальных данных.",
+      "example": "Network tokenization by Visa and Mastercard improves approval rates by 2-5%.",
+      "related": []
+    },
+    {
+      "term": "PA-DSS",
+      "term_ru": "PA-DSS",
+      "category": "compliance",
+      "definition": "Стандарт безопасности данных для платёжных приложений — требования к разработчикам ПО, обрабатывающего данные карт.",
+      "example": "PA-DSS has been replaced by PCI SSF (Software Security Framework) since 2022.",
+      "related": []
+    },
+    {
+      "term": "PSD2",
+      "term_ru": "Вторая платёжная директива (PSD2)",
+      "category": "compliance",
+      "definition": "Пересмотренная платёжная директива ЕС, внедрившая SCA, открытый банкинг и новые правила для платёжных провайдеров.",
+      "example": "PSD2 mandates SCA for all electronic payments above €30 in the EEA.",
+      "related": []
+    },
+    {
+      "term": "Rolling reserve",
+      "term_ru": "Роллинг-резерв",
+      "category": "finance",
+      "definition": "Процент от каждой транзакции, удерживаемый эквайером как буфер рисков и возвращаемый мерчанту после истечения периода удержания.",
+      "example": "A 10% rolling reserve with 180-day holdback is standard for high-risk merchants.",
+      "related": []
+    },
+    {
+      "term": "Holdback",
+      "term_ru": "Холдбэк (удержание)",
+      "category": "finance",
+      "definition": "Фиксированный процент или сумма средств расчёта, удерживаемая эквайером для покрытия потенциальных чарджбэков, возвратов или штрафов.",
+      "example": "The holdback was increased to 15% after the merchant exceeded chargeback thresholds.",
+      "related": []
+    },
+    {
+      "term": "Settlement cycle",
+      "term_ru": "Цикл расчётов",
+      "category": "finance",
+      "definition": "Период между захватом транзакции и получением мерчантом средств, обычно выражаемый как T+N рабочих дней.",
+      "example": "Moving from T+7 to T+1 settlement significantly improved the merchant's cash flow.",
+      "related": []
+    },
+    {
+      "term": "MDR (Merchant Discount Rate)",
+      "term_ru": "Торговая комиссия (MDR)",
+      "category": "finance",
+      "definition": "Общая комиссия, взимаемая с мерчанта за транзакцию, включающая интерчейндж, комиссию платёжной системы и наценку эквайера.",
+      "example": "The blended MDR for this merchant is 2.9% + $0.30 per transaction.",
+      "related": []
+    },
+    {
+      "term": "Interchange fee",
+      "term_ru": "Комиссия интерчейндж",
+      "category": "finance",
+      "definition": "Комиссия, выплачиваемая эквайером банку-эмитенту за каждую карточную транзакцию, устанавливаемая платёжной системой.",
+      "example": "EU interchange fees are capped at 0.2% for debit and 0.3% for credit cards.",
+      "related": []
+    },
+    {
+      "term": "Scheme fee",
+      "term_ru": "Комиссия платёжной системы",
+      "category": "finance",
+      "definition": "Комиссии платёжных систем (Visa, Mastercard) за использование их сети, включая оценочные сборы и комиссии за обработку.",
+      "example": "Scheme fees typically add 0.05-0.15% on top of interchange.",
+      "related": []
+    },
+    {
+      "term": "Blended rate",
+      "term_ru": "Смешанная ставка",
+      "category": "finance",
+      "definition": "Единый фиксированный процент за транзакцию, объединяющий интерчейндж, комиссию системы и маржу эквайера в одну ставку.",
+      "example": "Blended rates are simpler but often more expensive than IC++ for high-volume merchants.",
+      "related": []
+    },
+    {
+      "term": "IC++ (Interchange Plus Plus)",
+      "term_ru": "IC++ (Интерчейндж++)",
+      "category": "finance",
+      "definition": "Прозрачная модель ценообразования: мерчант платит фактический интерчейндж + комиссию системы + фиксированную наценку эквайера.",
+      "example": "IC++ pricing saved the merchant 0.4% compared to their previous blended rate.",
+      "related": []
+    },
+    {
+      "term": "Processing fee",
+      "term_ru": "Комиссия за обработку",
+      "category": "finance",
+      "definition": "Потранзакционная комиссия процессора за техническую маршрутизацию и авторизацию транзакций.",
+      "example": "The processing fee is $0.10 per transaction regardless of amount.",
+      "related": []
+    },
+    {
+      "term": "Transaction fee",
+      "term_ru": "Комиссия за транзакцию",
+      "category": "finance",
+      "definition": "Фиксированная или процентная комиссия за каждую обработанную транзакцию, может включать шлюзовые, процессинговые и системные компоненты.",
+      "example": "The total transaction fee breaks down to 1.8% interchange + 0.1% scheme + 0.5% margin.",
+      "related": []
+    },
+    {
+      "term": "Monthly minimum",
+      "term_ru": "Минимальная ежемесячная комиссия",
+      "category": "finance",
+      "definition": "Минимальная сумма комиссий, которую мерчант должен генерировать ежемесячно; при недоборе мерчант доплачивает разницу.",
+      "example": "With a $500 monthly minimum, low-volume months trigger an additional charge.",
+      "related": []
+    },
+    {
+      "term": "Setup fee",
+      "term_ru": "Комиссия за подключение",
+      "category": "finance",
+      "definition": "Единоразовая комиссия за первоначальную настройку аккаунта, поддержку интеграции и подключение мерчанта.",
+      "example": "The setup fee of €2,000 covers technical integration and risk assessment.",
+      "related": []
+    },
+    {
+      "term": "Payout",
+      "term_ru": "Выплата",
+      "category": "finance",
+      "definition": "Перевод расчётных средств от эквайера или PSP на указанный банковский счёт мерчанта.",
+      "example": "Payouts are processed every Tuesday and Friday via SEPA transfer.",
+      "related": []
+    },
+    {
+      "term": "Net settlement",
+      "term_ru": "Нетто-расчёт",
+      "category": "finance",
+      "definition": "Расчёт, при котором комиссии, чарджбэки и резервы вычитаются до перевода средств мерчанту.",
+      "example": "Under net settlement, the merchant receives the transaction amount minus all applicable fees.",
+      "related": []
+    },
+    {
+      "term": "Gross settlement",
+      "term_ru": "Брутто-расчёт",
+      "category": "finance",
+      "definition": "Расчёт, при котором полная сумма транзакции переводится мерчанту, а комиссии выставляются отдельным счётом.",
+      "example": "Gross settlement gives merchants better cash flow visibility but requires fee management.",
+      "related": []
+    },
+    {
+      "term": "FX markup",
+      "term_ru": "Валютная наценка",
+      "category": "finance",
+      "definition": "Маржа, добавляемая к оптовому обменному курсу при конвертации валют транзакции, взимаемая эквайером или платёжной системой.",
+      "example": "The acquirer's FX markup is 1.5% above the ECB reference rate.",
+      "related": []
+    },
+    {
+      "term": "DCC (Dynamic Currency Conversion)",
+      "term_ru": "Динамическая конвертация валюты (DCC)",
+      "category": "finance",
+      "definition": "Сервис, позволяющий держателям карт платить в своей валюте в точке продажи, где обменный курс применяет мерчант или эквайер.",
+      "example": "DCC margins can reach 3-5%, making it profitable for merchants but costly for cardholders.",
+      "related": []
+    },
+    {
+      "term": "MIF regulation",
+      "term_ru": "Регулирование MIF",
+      "category": "finance",
+      "definition": "Регулирование ЕС, ограничивающее многосторонние комиссии интерчейндж по потребительским картам для снижения издержек мерчантов.",
+      "example": "MIF regulation capped cross-border consumer debit interchange at 0.2% in the EEA.",
+      "related": []
+    },
+    {
+      "term": "Acquiring markup",
+      "term_ru": "Наценка эквайера",
+      "category": "finance",
+      "definition": "Маржа эквайера сверх интерчейнджа и комиссий платёжной системы, составляющая доход эквайера от процессинговых услуг.",
+      "example": "The acquiring markup was negotiated down to 0.3% for volumes above €1M/month.",
+      "related": []
+    },
+    {
+      "term": "Refund fee",
+      "term_ru": "Комиссия за возврат",
+      "category": "finance",
+      "definition": "Комиссия мерчанту за обработку возвратной транзакции, часто помимо невозвратных комиссий за исходную транзакцию.",
+      "example": "Refund fees are €0.25 per transaction, and the original interchange is not returned.",
+      "related": []
+    },
+    {
+      "term": "Chargeback fee",
+      "term_ru": "Комиссия за чарджбэк",
+      "category": "finance",
+      "definition": "Штрафная комиссия мерчанту за каждый полученный чарджбэк, независимо от исхода спора.",
+      "example": "Chargeback fees range from $15 to $100 depending on the acquirer and risk level.",
+      "related": []
+    },
+    {
+      "term": "Gateway fee",
+      "term_ru": "Комиссия шлюза",
+      "category": "finance",
+      "definition": "Комиссия платёжного шлюза за безопасную передачу данных транзакции между мерчантом и процессором.",
+      "example": "The gateway fee is $0.05 per transaction plus $25/month for the platform.",
+      "related": []
+    },
+    {
+      "term": "Batch fee",
+      "term_ru": "Комиссия за пакет",
+      "category": "finance",
+      "definition": "Комиссия за каждую отправку пакета транзакций мерчантом на расчёт.",
+      "example": "The batch fee is $0.25 per submission, with one batch per day.",
+      "related": []
+    },
+    {
+      "term": "PCI compliance fee",
+      "term_ru": "Комиссия за PCI-комплаенс",
+      "category": "finance",
+      "definition": "Ежегодная или ежемесячная комиссия эквайера за валидацию и мониторинг соответствия PCI DSS.",
+      "example": "The annual PCI compliance fee is $99, with a $19.95/month non-compliance penalty.",
+      "related": []
+    },
+    {
+      "term": "Fraud scoring",
+      "term_ru": "Скоринг мошенничества",
+      "category": "risk",
+      "definition": "Числовая оценка риска, присваиваемая каждой транзакции системой обнаружения мошенничества для определения вероятности фрода.",
+      "example": "Transactions with fraud scores above 85 are automatically declined.",
+      "related": []
+    },
+    {
+      "term": "Velocity check",
+      "term_ru": "Проверка скорости (velocity)",
+      "category": "risk",
+      "definition": "Правило предотвращения мошенничества, отслеживающее частоту транзакций с одной карты, IP, устройства или аккаунта за период времени.",
+      "example": "Velocity checks block more than 3 transactions per card within 10 minutes.",
+      "related": []
+    },
+    {
+      "term": "BIN blocking",
+      "term_ru": "Блокировка по BIN",
+      "category": "risk",
+      "definition": "Метод управления рисками, блокирующий транзакции с определённых BIN-диапазонов, связанных с высоким уровнем мошенничества.",
+      "example": "BIN blocking was applied to prepaid card ranges showing 40%+ fraud rates.",
+      "related": []
+    },
+    {
+      "term": "Device fingerprinting",
+      "term_ru": "Цифровой отпечаток устройства",
+      "category": "risk",
+      "definition": "Технология сбора уникальных характеристик устройства пользователя (браузер, ОС, плагины, разрешение экрана) для идентификации и отслеживания.",
+      "example": "Device fingerprinting detected 50 transactions from the same virtual machine.",
+      "related": []
+    },
+    {
+      "term": "AVS (Address Verification Service)",
+      "term_ru": "Служба проверки адреса (AVS)",
+      "category": "risk",
+      "definition": "Инструмент предотвращения мошенничества, сравнивающий адрес плательщика с адресом, зарегистрированным в банке-эмитенте.",
+      "example": "AVS mismatch on zip code resulted in a soft decline requiring manual review.",
+      "related": []
+    },
+    {
+      "term": "CVV/CVC",
+      "term_ru": "CVV/CVC",
+      "category": "risk",
+      "definition": "Код верификации карты — 3- или 4-значный код безопасности, напечатанный на карте, для подтверждения транзакций без предъявления карты.",
+      "example": "CVV is required for all CNP transactions and must never be stored post-authorization.",
+      "related": []
+    },
+    {
+      "term": "3DS authentication",
+      "term_ru": "Аутентификация 3DS",
+      "category": "risk",
+      "definition": "Процесс верификации личности держателя карты через протокол 3-D Secure при онлайн-транзакции, обеспечивающий перенос ответственности на эмитента.",
+      "example": "3DS authentication with frictionless flow maintained a 95% completion rate.",
+      "related": []
+    },
+    {
+      "term": "Risk engine",
+      "term_ru": "Движок оценки рисков",
+      "category": "risk",
+      "definition": "Программная система, оценивающая транзакции в реальном времени с помощью правил, ML-моделей и поведенческих данных для предотвращения мошенничества.",
+      "example": "The risk engine processes each transaction in under 100ms with 200+ data points.",
+      "related": []
+    },
+    {
+      "term": "Machine learning fraud detection",
+      "term_ru": "ML-детекция мошенничества",
+      "category": "risk",
+      "definition": "Применение алгоритмов машинного обучения для анализа паттернов транзакций и выявления мошенничества, которое не ловят правила.",
+      "example": "ML models reduced false positives by 40% while maintaining the same fraud catch rate.",
+      "related": []
+    },
+    {
+      "term": "Rules engine",
+      "term_ru": "Движок правил",
+      "category": "risk",
+      "definition": "Настраиваемая система правил «если-то» для автоматического одобрения, отклонения или маркировки транзакций по заданным критериям.",
+      "example": "The rules engine blocks all transactions over $5,000 from new customers for manual review.",
+      "related": []
+    },
+    {
+      "term": "Manual review",
+      "term_ru": "Ручная проверка",
+      "category": "risk",
+      "definition": "Проверка человеком помеченных транзакций, попавших в зону неопределённости между одобрением и отклонением в системе скоринга.",
+      "example": "Manual review of 200 daily flagged orders requires a team of 3 fraud analysts.",
+      "related": []
+    },
+    {
+      "term": "Whitelist",
+      "term_ru": "Белый список",
+      "category": "risk",
+      "definition": "Список предварительно одобренных клиентов, карт, IP или устройств, пропускающих определённые проверки на мошенничество.",
+      "example": "VIP customers are added to the whitelist to avoid false declines on high-value orders.",
+      "related": []
+    },
+    {
+      "term": "Blacklist",
+      "term_ru": "Чёрный список",
+      "category": "risk",
+      "definition": "Список известных мошеннических карт, email, IP, устройств или личностей, автоматически блокируемых при попытке транзакции.",
+      "example": "The blacklist contains 50,000+ card hashes from confirmed fraud cases.",
+      "related": []
+    },
+    {
+      "term": "Proxy detection",
+      "term_ru": "Обнаружение прокси",
+      "category": "risk",
+      "definition": "Технология определения, когда пользователь скрывает свой реальный IP-адрес через прокси-сервер, VPN или сеть Tor при транзакции.",
+      "example": "Proxy detection flagged a US card being used from a datacenter IP in Nigeria.",
+      "related": []
+    },
+    {
+      "term": "Geolocation check",
+      "term_ru": "Проверка геолокации",
+      "category": "risk",
+      "definition": "Проверка географического расположения устройства плательщика и сравнение со страной выпуска карты и адресом выставления счёта.",
+      "example": "Geolocation check flagged a UK card transacting from a device in Southeast Asia.",
+      "related": []
+    },
+    {
+      "term": "Card testing",
+      "term_ru": "Тестирование карт",
+      "category": "risk",
+      "definition": "Мошенническая техника, при которой преступники совершают мелкие тестовые транзакции для проверки украденных данных карт перед крупными покупками.",
+      "example": "A spike in $0.01 authorizations indicated a card testing attack on the checkout page.",
+      "related": []
+    },
+    {
+      "term": "Account takeover",
+      "term_ru": "Захват аккаунта",
+      "category": "risk",
+      "definition": "Тип мошенничества, при котором преступники получают несанкционированный доступ к аккаунту легитимного клиента для покупок или кражи данных.",
+      "example": "Account takeover was detected when the shipping address changed minutes before a purchase.",
+      "related": []
+    },
+    {
+      "term": "Identity verification",
+      "term_ru": "Верификация личности",
+      "category": "risk",
+      "definition": "Процесс подтверждения личности с использованием документов, биометрии или проверок по базам данных для предотвращения мошенничества.",
+      "example": "Identity verification includes document OCR, liveness check, and database matching.",
+      "related": []
+    },
+    {
+      "term": "Behavioral analytics",
+      "term_ru": "Поведенческая аналитика",
+      "category": "risk",
+      "definition": "Анализ поведенческих паттернов пользователя (скорость набора, движения мыши, путь навигации) для обнаружения аномалий, указывающих на фрод.",
+      "example": "Behavioral analytics detected bot-like precision in form filling across 300 sessions.",
+      "related": []
+    },
+    {
+      "term": "Risk threshold",
+      "term_ru": "Порог риска",
+      "category": "risk",
+      "definition": "Настраиваемый балл или значение, определяющее, когда транзакция должна быть одобрена, отправлена на проверку или автоматически отклонена.",
+      "example": "Lowering the risk threshold from 70 to 60 caught 15% more fraud but increased manual review volume.",
+      "related": []
+    },
+    {
+      "term": "Fraud rate",
+      "term_ru": "Уровень мошенничества",
+      "category": "risk",
+      "definition": "Процент транзакций, подтверждённых как мошеннические, обычно измеряемый в базисных пунктах или проценте от объёма.",
+      "example": "Our fraud rate is 8 bps, well below the scheme threshold of 90 bps.",
+      "related": []
+    },
+    {
+      "term": "False positive",
+      "term_ru": "Ложноположительное срабатывание",
+      "category": "risk",
+      "definition": "Легитимная транзакция, ошибочно помеченная или отклонённая системой обнаружения мошенничества как потенциально мошенническая.",
+      "example": "High false positive rates cost merchants 30x more in lost revenue than actual fraud.",
+      "related": []
+    },
+    {
+      "term": "False decline",
+      "term_ru": "Ложное отклонение",
+      "category": "risk",
+      "definition": "Легитимная транзакция, отклонённая системой мошенничества или эмитентом, приводящая к потере дохода и негативному опыту клиента.",
+      "example": "False declines cost US merchants an estimated $443 billion annually.",
+      "related": []
+    },
+    {
+      "term": "Triangulation fraud",
+      "term_ru": "Треугольное мошенничество",
+      "category": "risk",
+      "definition": "Схема мошенничества: преступники создают фейковые магазины, собирают заказы и данные карт покупателей, а выполняют заказы по украденным картам других жертв.",
+      "example": "Triangulation fraud is hard to detect because the real customer receives their goods.",
+      "related": []
+    },
+    {
+      "term": "Amount pattern analysis",
+      "term_ru": "Анализ паттернов сумм",
+      "category": "risk",
+      "definition": "Выявление подозрительных паттернов сумм транзакций: круглые числа, структурирование ниже порогов, необычное распределение сумм.",
+      "example": "Amount pattern analysis detected 50 transactions of exactly $499.99 — just below the $500 review threshold.",
+      "related": []
+    },
+    {
+      "term": "API integration",
+      "term_ru": "API-интеграция",
+      "category": "tech",
+      "definition": "Процесс подключения системы мерчанта к платёжному провайдеру через программные интерфейсы для обработки транзакций.",
+      "example": "API integration took 3 weeks including sandbox testing and certification.",
+      "related": []
+    },
+    {
+      "term": "Webhook",
+      "term_ru": "Вебхук",
+      "category": "tech",
+      "definition": "HTTP-обратный вызов, автоматически отправляющий уведомления в реальном времени от платёжной системы на сервер мерчанта при событиях транзакций.",
+      "example": "Webhooks notify the merchant of payment status changes within seconds.",
+      "related": []
+    },
+    {
+      "term": "Hosted payment page",
+      "term_ru": "Хостинговая платёжная страница",
+      "category": "tech",
+      "definition": "Платёжная форма, размещённая на стороне PSP, где плательщик вводит данные карты, снижая PCI-нагрузку на мерчанта.",
+      "example": "The hosted payment page supports 12 languages and 30 payment methods.",
+      "related": []
+    },
+    {
+      "term": "Server-to-server (S2S)",
+      "term_ru": "Сервер-сервер (S2S)",
+      "category": "tech",
+      "definition": "Прямая API-интеграция, при которой бэкенд-сервер мерчанта напрямую взаимодействует с сервером платёжного провайдера без редиректов браузера.",
+      "example": "S2S integration requires PCI DSS Level 1 compliance as the merchant handles raw card data.",
+      "related": []
+    },
+    {
+      "term": "White label",
+      "term_ru": "White label (белая этикетка)",
+      "category": "tech",
+      "definition": "Платёжное решение, предоставленное одной компанией, но ребрендированное и продаваемое другой под собственным брендом.",
+      "example": "The white-label gateway allows ISOs to offer branded payment processing to their merchants.",
+      "related": []
+    },
+    {
+      "term": "Redirect",
+      "term_ru": "Редирект",
+      "category": "tech",
+      "definition": "Платёжный поток, при котором клиент перенаправляется с сайта мерчанта на внешнюю страницу (PSP, банк или APM) для завершения оплаты.",
+      "example": "iDEAL payments require a redirect to the customer's online banking portal.",
+      "related": []
+    },
+    {
+      "term": "iFrame",
+      "term_ru": "iFrame",
+      "category": "tech",
+      "definition": "Встроенная платёжная форма, отображаемая на странице мерчанта через встроенный фрейм, сочетающая брендинг с сниженной PCI-нагрузкой.",
+      "example": "The iFrame payment form loads within the checkout page without redirecting the customer.",
+      "related": []
+    },
+    {
+      "term": "SDK (Software Development Kit)",
+      "term_ru": "SDK (набор средств разработки)",
+      "category": "tech",
+      "definition": "Набор инструментов, библиотек и документации от платёжного провайдера для упрощения интеграции в мобильные или веб-приложения.",
+      "example": "The mobile SDK supports iOS and Android with built-in 3DS2 and Apple Pay.",
+      "related": []
+    },
+    {
+      "term": "Payment link",
+      "term_ru": "Платёжная ссылка",
+      "category": "tech",
+      "definition": "URL, сгенерированный мерчантом или PSP, направляющий клиента на предварительно настроенную платёжную страницу для конкретной суммы.",
+      "example": "Payment links are shared via email, SMS, or messaging apps for remote payments.",
+      "related": []
+    },
+    {
+      "term": "QR code payment",
+      "term_ru": "Оплата по QR-коду",
+      "category": "tech",
+      "definition": "Способ оплаты, при котором клиент сканирует QR-код с платёжной информацией для инициации транзакции через мобильное устройство.",
+      "example": "QR code payments dominate in Southeast Asia with GrabPay, GCash, and PromptPay.",
+      "related": []
+    },
+    {
+      "term": "Recurring billing",
+      "term_ru": "Рекуррентные платежи",
+      "category": "tech",
+      "definition": "Автоматическое периодическое списание с сохранённого платёжного средства клиента за подписки или рассрочки.",
+      "example": "Recurring billing with network tokens reduces involuntary churn from expired cards.",
+      "related": []
+    },
+    {
+      "term": "Subscription management",
+      "term_ru": "Управление подписками",
+      "category": "tech",
+      "definition": "Инструменты и системы для управления рекуррентными планами: создание, апгрейд, даунгрейд, приостановка и отмена подписок.",
+      "example": "Subscription management handles prorated charges when customers upgrade mid-cycle.",
+      "related": []
+    },
+    {
+      "term": "Payment token",
+      "term_ru": "Платёжный токен",
+      "category": "tech",
+      "definition": "Уникальный идентификатор, заменяющий конфиденциальные данные карты для хранения и повторного использования в последующих транзакциях.",
+      "example": "Payment tokens allow returning customers to check out without re-entering card details.",
+      "related": []
+    },
+    {
+      "term": "Card vault",
+      "term_ru": "Хранилище карт (Card vault)",
+      "category": "tech",
+      "definition": "PCI-совместимое защищённое хранилище зашифрованных данных карт, управляемое PSP или сторонним провайдером токенизации.",
+      "example": "The card vault stores 2M+ card tokens with HSM-backed encryption.",
+      "related": []
+    },
+    {
+      "term": "PAN (Primary Account Number)",
+      "term_ru": "Номер карты (PAN)",
+      "category": "tech",
+      "definition": "Полный номер карты (обычно 16-19 цифр), однозначно идентифицирующий счёт держателя карты в банке-эмитенте.",
+      "example": "PAN data must be encrypted in transit and at rest per PCI DSS requirements.",
+      "related": []
+    },
+    {
+      "term": "Truncated PAN",
+      "term_ru": "Маскированный PAN",
+      "category": "tech",
+      "definition": "Частично замаскированный номер карты, показывающий только первые шесть и/или последние четыре цифры для идентификации без раскрытия.",
+      "example": "Receipts display the truncated PAN as 4111 **** **** 1111.",
+      "related": []
+    },
+    {
+      "term": "Payment orchestration",
+      "term_ru": "Оркестрация платежей",
+      "category": "tech",
+      "definition": "Уровень, управляющий подключениями к нескольким PSP, эквайерам и платёжным методам через единую интеграцию для оптимизации маршрутизации и затрат.",
+      "example": "Payment orchestration increased our approval rate by routing to the best acquirer per BIN.",
+      "related": []
+    },
+    {
+      "term": "Smart routing",
+      "term_ru": "Умная маршрутизация",
+      "category": "tech",
+      "definition": "Динамическая маршрутизация транзакций, выбирающая оптимального эквайера или PSP на основе показателей одобрения, комиссий, валюты и типа карты.",
+      "example": "Smart routing sends EU cards to our local acquirer and APAC cards to our regional partner.",
+      "related": []
+    },
+    {
+      "term": "Failover",
+      "term_ru": "Фейловер (аварийное переключение)",
+      "category": "tech",
+      "definition": "Автоматическое перенаправление транзакций на резервного эквайера или PSP при недоступности или проблемах основного подключения.",
+      "example": "Failover to the secondary acquirer activated when the primary experienced 30-second timeouts.",
+      "related": []
+    },
+    {
+      "term": "Cascade routing",
+      "term_ru": "Каскадная маршрутизация",
+      "category": "tech",
+      "definition": "Стратегия последовательных повторных попыток, автоматически направляющая отклонённую транзакцию к альтернативным процессорам для максимизации одобрений.",
+      "example": "Cascade routing recovered 12% of soft-declined transactions through secondary acquirers.",
+      "related": []
+    },
+    {
+      "term": "Idempotency key",
+      "term_ru": "Ключ идемпотентности",
+      "category": "tech",
+      "definition": "Уникальный идентификатор, отправляемый с API-запросами для предотвращения создания дублирующих транзакций при повторных попытках.",
+      "example": "Always include an idempotency key when retrying payment requests to avoid double charges.",
+      "related": []
+    },
+    {
+      "term": "Payment status",
+      "term_ru": "Статус платежа",
+      "category": "tech",
+      "definition": "Текущее состояние транзакции в её жизненном цикле: ожидание, авторизована, захвачена, расчёт, отклонена, отменена или возвращена.",
+      "example": "Poll payment status via webhook rather than API polling to reduce server load.",
+      "related": []
+    },
+    {
+      "term": "Callback URL",
+      "term_ru": "URL обратного вызова",
+      "category": "tech",
+      "definition": "Указанная мерчантом конечная точка для получения асинхронных уведомлений от платёжного провайдера об изменениях статуса транзакций.",
+      "example": "Configure separate callback URLs for production and sandbox environments.",
+      "related": []
+    },
+    {
+      "term": "Payment page customization",
+      "term_ru": "Кастомизация платёжной страницы",
+      "category": "tech",
+      "definition": "Возможность брендировать и стилизовать хостинговые платёжные страницы логотипом, цветами и шрифтами мерчанта для единообразия бренда.",
+      "example": "Payment page customization reduced cart abandonment by 15% through brand trust.",
+      "related": []
+    },
+    {
+      "term": "Load balancing",
+      "term_ru": "Балансировка нагрузки",
+      "category": "tech",
+      "definition": "Распределение транзакционного трафика между несколькими процессинговыми точками для оптимизации производительности и доступности.",
+      "example": "Load balancing distributes 60% of traffic to acquirer A and 40% to acquirer B.",
+      "related": []
+    },
+    {
+      "term": "CPA (Cost Per Action)",
+      "term_ru": "Стоимость за действие (CPA)",
+      "category": "traffic",
+      "definition": "Модель ценообразования, при которой рекламодатель платит за конкретное целевое действие: продажу, регистрацию или депозит.",
+      "example": "CPA for a first-time deposit offer is $45 in the European market.",
+      "related": []
+    },
+    {
+      "term": "CPC (Cost Per Click)",
+      "term_ru": "Стоимость за клик (CPC)",
+      "category": "traffic",
+      "definition": "Модель ценообразования, при которой рекламодатель платит за каждый клик по рекламному объявлению.",
+      "example": "Average CPC for financial services keywords exceeds $3.50 on Google Ads.",
+      "related": []
+    },
+    {
+      "term": "CPL (Cost Per Lead)",
+      "term_ru": "Стоимость за лид (CPL)",
+      "category": "traffic",
+      "definition": "Модель ценообразования, при которой рекламодатель платит за каждый квалифицированный лид: заполнение формы, подписку на email.",
+      "example": "CPL for merchant acquisition campaigns averaged $120 per qualified lead.",
+      "related": []
+    },
+    {
+      "term": "CPM (Cost Per Mille)",
+      "term_ru": "Стоимость за тысячу показов (CPM)",
+      "category": "traffic",
+      "definition": "Модель ценообразования, при которой рекламодатель платит за каждую тысячу показов рекламного объявления.",
+      "example": "Display CPM rates for fintech banners range from $5-$15 depending on GEO.",
+      "related": []
+    },
+    {
+      "term": "ROI (Return on Investment)",
+      "term_ru": "Возврат на инвестиции (ROI)",
+      "category": "traffic",
+      "definition": "Метрика рентабельности инвестиций, рассчитываемая как (доход - затраты) / затраты, выраженная в процентах.",
+      "example": "The campaign achieved 340% ROI with $10K spend generating $44K in revenue.",
+      "related": []
+    },
+    {
+      "term": "ROAS (Return on Ad Spend)",
+      "term_ru": "Возврат на рекламные расходы (ROAS)",
+      "category": "traffic",
+      "definition": "Метрика, измеряющая доход на каждый доллар рекламных расходов: доход / расходы на рекламу.",
+      "example": "A ROAS of 4.0 means $4 revenue for every $1 spent on ads.",
+      "related": []
+    },
+    {
+      "term": "Conversion rate",
+      "term_ru": "Конверсия",
+      "category": "traffic",
+      "definition": "Процент посетителей или кликов, совершивших целевое действие: покупку, платёж или регистрацию.",
+      "example": "Optimizing the checkout flow increased the conversion rate from 2.1% to 3.8%.",
+      "related": []
+    },
+    {
+      "term": "Traffic arbitrage",
+      "term_ru": "Арбитраж трафика",
+      "category": "traffic",
+      "definition": "Практика покупки трафика по низкой цене и монетизации по более высокой ставке через офферы, рекламу или партнёрские программы.",
+      "example": "Traffic arbitrage margins in payment verticals average 30-50% for experienced buyers.",
+      "related": []
+    },
+    {
+      "term": "Lead generation",
+      "term_ru": "Лидогенерация",
+      "category": "traffic",
+      "definition": "Процесс привлечения и захвата интереса потенциальных клиентов к продукту или услуге для наполнения воронки продаж.",
+      "example": "Lead generation campaigns target payment managers at e-commerce companies.",
+      "related": []
+    },
+    {
+      "term": "Offer",
+      "term_ru": "Оффер",
+      "category": "traffic",
+      "definition": "Конкретный продукт, услуга или предложение, продвигаемое через партнёрские или рекламные каналы с определёнными условиями выплат.",
+      "example": "The PSP offer pays $200 CPA for each merchant that processes $10K+ in the first month.",
+      "related": []
+    },
+    {
+      "term": "Affiliate network",
+      "term_ru": "Партнёрская сеть",
+      "category": "traffic",
+      "definition": "Платформа, соединяющая рекламодателей с вебмастерами, которые продвигают офферы за комиссию по результатам.",
+      "example": "The affiliate network handles tracking, attribution, and payment for 500+ publishers.",
+      "related": []
+    },
+    {
+      "term": "Media buying",
+      "term_ru": "Медиабаинг",
+      "category": "traffic",
+      "definition": "Процесс покупки рекламных размещений в цифровых каналах для привлечения целевого трафика на офферы или лендинги.",
+      "example": "Media buying for payment processing SaaS focuses on LinkedIn and Google Search.",
+      "related": []
+    },
+    {
+      "term": "Landing page",
+      "term_ru": "Лендинг",
+      "category": "traffic",
+      "definition": "Отдельная веб-страница, созданная для приёма рекламного трафика и конвертации посетителей в лиды или клиентов.",
+      "example": "A/B testing landing pages improved signup conversion from 4% to 7%.",
+      "related": []
+    },
+    {
+      "term": "Pre-landing",
+      "term_ru": "Прелендинг",
+      "category": "traffic",
+      "definition": "Промежуточная страница перед основным лендингом, подогревающая посетителя дополнительной информацией или социальным доказательством.",
+      "example": "The pre-landing with customer testimonials increased main page conversion by 25%.",
+      "related": []
+    },
+    {
+      "term": "Smartlink",
+      "term_ru": "Смартлинк",
+      "category": "traffic",
+      "definition": "Интеллектуальная ссылка, автоматически направляющая пользователей на лучший оффер по их GEO, устройству, ОС и другим параметрам.",
+      "example": "The smartlink routes European mobile traffic to localized payment offers.",
+      "related": []
+    },
+    {
+      "term": "Postback",
+      "term_ru": "Постбэк",
+      "category": "traffic",
+      "definition": "Серверный обратный вызов, уведомляющий источник трафика или партнёрскую сеть о конверсии (продажа, регистрация).",
+      "example": "Configure the postback URL to fire on successful payment confirmation.",
+      "related": []
+    },
+    {
+      "term": "SubID",
+      "term_ru": "SubID",
+      "category": "traffic",
+      "definition": "Параметр отслеживания, добавляемый к партнёрским ссылкам для идентификации конкретных источников трафика, площадок или креативов.",
+      "example": "SubID tracking revealed that mobile banner traffic converted 3x better than desktop.",
+      "related": []
+    },
+    {
+      "term": "Click ID",
+      "term_ru": "Click ID",
+      "category": "traffic",
+      "definition": "Уникальный идентификатор каждого клика по рекламе, обеспечивающий точное отслеживание конверсий и атрибуцию.",
+      "example": "The click ID is passed through the entire funnel to attribute conversions accurately.",
+      "related": []
+    },
+    {
+      "term": "EPC (Earnings Per Click)",
+      "term_ru": "Доход за клик (EPC)",
+      "category": "traffic",
+      "definition": "Метрика, показывающая средний доход на клик по партнёрской ссылке для сравнения прибыльности офферов.",
+      "example": "The payment gateway offer has an EPC of $0.85, making it our top performer.",
+      "related": []
+    },
+    {
+      "term": "CTR (Click-Through Rate)",
+      "term_ru": "Кликабельность (CTR)",
+      "category": "traffic",
+      "definition": "Процент пользователей, кликнувших по объявлению после его показа: клики / показы.",
+      "example": "The banner achieved a 2.4% CTR, double the industry average for fintech ads.",
+      "related": []
+    },
+    {
+      "term": "Rebill",
+      "term_ru": "Ребилл",
+      "category": "traffic",
+      "definition": "Повторное списание с платёжного средства клиента после первоначальной транзакции, типичное для подписок и пробных офферов.",
+      "example": "The offer pays $5 initial + $3 per rebill, with an average of 4 rebills per user.",
+      "related": []
+    },
+    {
+      "term": "Trial",
+      "term_ru": "Пробный период",
+      "category": "traffic",
+      "definition": "Промо-предложение, позволяющее клиентам пользоваться сервисом бесплатно или со скидкой в течение ограниченного периода до начала рекуррентных списаний.",
+      "example": "The 7-day trial converts to $29.99/month with a 35% trial-to-paid rate.",
+      "related": []
+    },
+    {
+      "term": "Upsell",
+      "term_ru": "Апселл",
+      "category": "traffic",
+      "definition": "Техника продаж, предлагающая клиентам более дорогой продукт или дополнение после первоначальной покупки для увеличения среднего чека.",
+      "example": "Post-payment upsell to premium plan converts at 18% and adds $20 to AOV.",
+      "related": []
+    },
+    {
+      "term": "Downsell",
+      "term_ru": "Даунселл",
+      "category": "traffic",
+      "definition": "Техника продаж, предлагающая более дешёвую альтернативу, когда клиент отклоняет первоначальное предложение или пытается отменить подписку.",
+      "example": "The downsell to a basic plan at $9.99/month retained 40% of cancelling users.",
+      "related": []
+    },
+    {
+      "term": "Funnel",
+      "term_ru": "Воронка",
+      "category": "traffic",
+      "definition": "Последовательный поток страниц и шагов, которые проходит пользователь от клика по рекламе до финальной конверсии (платежа).",
+      "example": "The 4-step funnel (ad → pre-landing → landing → checkout) achieves a 3.2% end-to-end CR.",
+      "related": []
+    },
+    {
+      "term": "On-ramp",
+      "term_ru": "Ввод средств (On-ramp)",
+      "category": "crypto",
+      "definition": "Сервис конвертации фиатной валюты в криптовалюту, позволяющий пользователям приобретать цифровые активы традиционными платёжными методами.",
+      "example": "The on-ramp supports Visa/Mastercard purchases of BTC, ETH, and USDT.",
+      "related": []
+    },
+    {
+      "term": "Off-ramp",
+      "term_ru": "Вывод средств (Off-ramp)",
+      "category": "crypto",
+      "definition": "Сервис конвертации криптовалюты обратно в фиатную валюту для вывода средств на традиционные банковские счета.",
+      "example": "Off-ramp settlement to EUR bank accounts takes T+1 via SEPA.",
+      "related": []
+    },
+    {
+      "term": "VASP (Virtual Asset Service Provider)",
+      "term_ru": "Провайдер виртуальных активов (VASP)",
+      "category": "crypto",
+      "definition": "Организация, предоставляющая услуги с виртуальными активами: обмен, перевод, хранение или администрирование цифровых активов.",
+      "example": "VASPs must comply with FATF travel rule requirements for transfers over $1,000.",
+      "related": []
+    },
+    {
+      "term": "Travel rule (crypto)",
+      "term_ru": "Правило передачи информации (крипто)",
+      "category": "crypto",
+      "definition": "Требование ФАТФ к VASP обмениваться информацией об отправителе и получателе при криптовалютных переводах выше установленных порогов.",
+      "example": "Travel rule compliance requires integration with protocols like TRISA or OpenVASP.",
+      "related": []
+    },
+    {
+      "term": "Stablecoin processing",
+      "term_ru": "Процессинг стейблкоинов",
+      "category": "crypto",
+      "definition": "Обработка платежей с использованием стейблкоинов (USDT, USDC, DAI), сохраняющих фиксированную стоимость относительно фиатных валют.",
+      "example": "Stablecoin processing eliminates volatility risk while maintaining blockchain settlement speed.",
+      "related": []
+    },
+    {
+      "term": "Hot wallet",
+      "term_ru": "Горячий кошелёк",
+      "category": "crypto",
+      "definition": "Криптовалютный кошелёк, подключённый к интернету, используемый для активной торговли и ежедневных операций с быстрым доступом, но повышенным риском.",
+      "example": "Keep only 5-10% of total reserves in the hot wallet for operational liquidity.",
+      "related": []
+    },
+    {
+      "term": "Cold wallet",
+      "term_ru": "Холодный кошелёк",
+      "category": "crypto",
+      "definition": "Криптовалютный кошелёк, хранящийся офлайн (аппаратное устройство, изолированный компьютер, бумага) для максимальной безопасности.",
+      "example": "90% of exchange reserves are held in cold wallets with multi-signature access.",
+      "related": []
+    },
+    {
+      "term": "Custodial wallet",
+      "term_ru": "Кастодиальный кошелёк",
+      "category": "crypto",
+      "definition": "Кошелёк, приватные ключи которого хранит сторонний провайдер, предлагающий удобство в обмен на самостоятельный контроль.",
+      "example": "Custodial wallets simplify onboarding for users unfamiliar with key management.",
+      "related": []
+    },
+    {
+      "term": "Non-custodial wallet",
+      "term_ru": "Некастодиальный кошелёк",
+      "category": "crypto",
+      "definition": "Кошелёк, в котором пользователь полностью контролирует свои приватные ключи, и никакая третья сторона не может заблокировать средства.",
+      "example": "Non-custodial wallets require users to securely store their seed phrase.",
+      "related": []
+    },
+    {
+      "term": "DEX (Decentralized Exchange)",
+      "term_ru": "Децентрализованная биржа (DEX)",
+      "category": "crypto",
+      "definition": "Одноранговая площадка, где сделки с криптовалютой выполняются напрямую между пользователями через смарт-контракты без центрального посредника.",
+      "example": "Uniswap and PancakeSwap are the largest DEXs by trading volume.",
+      "related": []
+    },
+    {
+      "term": "CEX (Centralized Exchange)",
+      "term_ru": "Централизованная биржа (CEX)",
+      "category": "crypto",
+      "definition": "Криптовалютная биржа, управляемая централизованной компанией, которая ведёт ордербуки, хранит средства и обеспечивает KYC/AML.",
+      "example": "CEXs like Binance and Coinbase handle the majority of global crypto trading volume.",
+      "related": []
+    },
+    {
+      "term": "Liquidity pool",
+      "term_ru": "Пул ликвидности",
+      "category": "crypto",
+      "definition": "Смарт-контракт с заблокированными парами токенов, обеспечивающий автоматизированную торговлю на DEX по модели автоматического маркетмейкера (AMM).",
+      "example": "The USDT/ETH liquidity pool has $50M TVL with 0.3% swap fees.",
+      "related": []
+    },
+    {
+      "term": "Slippage",
+      "term_ru": "Проскальзывание (slippage)",
+      "category": "crypto",
+      "definition": "Разница между ожидаемой ценой сделки и фактической ценой исполнения, вызванная движением рынка или недостаточной ликвидностью.",
+      "example": "Set slippage tolerance to 0.5% for stablecoin swaps and 2% for volatile pairs.",
+      "related": []
+    },
+    {
+      "term": "Gas fee",
+      "term_ru": "Комиссия за газ",
+      "category": "crypto",
+      "definition": "Комиссия, выплачиваемая валидаторам/майнерам блокчейна за обработку и подтверждение транзакций, зависящая от загруженности сети.",
+      "example": "Ethereum gas fees spiked to $50 per transaction during the NFT mint event.",
+      "related": []
+    },
+    {
+      "term": "Blockchain confirmation",
+      "term_ru": "Подтверждение в блокчейне",
+      "category": "crypto",
+      "definition": "Включение транзакции в добытый/валидированный блок, при этом дополнительные подтверждения повышают окончательность и безопасность.",
+      "example": "Bitcoin deposits require 3 confirmations (~30 min), USDT-TRC20 requires 20 (~1 min).",
+      "related": []
+    },
+    {
+      "term": "Mempool",
+      "term_ru": "Мемпул",
+      "category": "crypto",
+      "definition": "Область ожидания неподтверждённых транзакций перед включением в блок, где транзакции конкурируют по приоритету комиссии.",
+      "example": "The mempool had 150K pending transactions, causing 2-hour confirmation delays.",
+      "related": []
+    },
+    {
+      "term": "UTXO (Unspent Transaction Output)",
+      "term_ru": "Неизрасходованный выход транзакции (UTXO)",
+      "category": "crypto",
+      "definition": "Модель учёта, используемая Bitcoin и подобными блокчейнами, где каждая транзакция потребляет предыдущие выходы и создаёт новые.",
+      "example": "UTXO consolidation reduces future transaction fees by combining small outputs.",
+      "related": []
+    },
+    {
+      "term": "Smart contract",
+      "term_ru": "Смарт-контракт",
+      "category": "crypto",
+      "definition": "Самоисполняющийся код, развёрнутый в блокчейне, автоматически выполняющий условия соглашения при наступлении заданных условий.",
+      "example": "The escrow smart contract releases payment to the seller upon delivery confirmation.",
+      "related": []
+    },
+    {
+      "term": "DeFi (Decentralized Finance)",
+      "term_ru": "Децентрализованные финансы (DeFi)",
+      "category": "crypto",
+      "definition": "Финансовая экосистема на базе блокчейна, предлагающая кредитование, заимствование, торговлю и другие услуги без традиционных посредников.",
+      "example": "DeFi protocols like Aave and Compound offer automated lending with variable APY.",
+      "related": []
+    },
+    {
+      "term": "Yield farming",
+      "term_ru": "Фарминг доходности",
+      "category": "crypto",
+      "definition": "Стратегия DeFi — перемещение криптоактивов между протоколами для максимизации доходности через проценты, комиссии и токен-награды.",
+      "example": "Yield farming on the USDC/USDT pool generates 8% APY plus governance token rewards.",
+      "related": []
+    },
+    {
+      "term": "Bridge",
+      "term_ru": "Мост (Bridge)",
+      "category": "crypto",
+      "definition": "Протокол, обеспечивающий передачу активов и данных между различными блокчейн-сетями, соединяя изолированные экосистемы.",
+      "example": "The bridge transfers USDT from Ethereum to Polygon in under 10 minutes.",
+      "related": []
+    },
+    {
+      "term": "Cross-chain",
+      "term_ru": "Кроссчейн",
+      "category": "crypto",
+      "definition": "Технологии и протоколы, обеспечивающие взаимодействие между различными блокчейнами для переноса активов и информации.",
+      "example": "Cross-chain swaps allow exchanging BTC for ETH without a centralized exchange.",
+      "related": []
+    },
+    {
+      "term": "Atomic swap",
+      "term_ru": "Атомарный обмен",
+      "category": "crypto",
+      "definition": "Одноранговый обмен криптовалютами между разными блокчейнами через контракты с хеш-блокировкой по времени (HTLC) без доверенного посредника.",
+      "example": "Atomic swaps between BTC and LTC complete in minutes without counterparty risk.",
+      "related": []
+    },
+    {
+      "term": "Payment channel",
+      "term_ru": "Платёжный канал",
+      "category": "crypto",
+      "definition": "Механизм off-chain, где две стороны могут проводить множество транзакций без записи каждой в блокчейн, фиксируя только итоговое состояние.",
+      "example": "Payment channels enable micropayments that would be uneconomical on-chain due to fees.",
+      "related": []
+    },
+    {
+      "term": "Lightning Network",
+      "term_ru": "Сеть Lightning",
+      "category": "crypto",
+      "definition": "Протокол платежей второго уровня поверх Bitcoin, обеспечивающий мгновенные транзакции с низкими комиссиями через сеть двунаправленных платёжных каналов.",
+      "example": "Lightning Network processes Bitcoin payments in milliseconds with fees under 1 satoshi.",
+      "related": []
+    },
+    {
+      "term": "Layer 2",
+      "term_ru": "Второй уровень (Layer 2)",
+      "category": "crypto",
+      "definition": "Решения масштабирования поверх базового блокчейна (Layer 1), обрабатывающие транзакции off-chain для увеличения пропускной способности и снижения комиссий.",
+      "example": "Arbitrum and Optimism are popular Layer 2 solutions for Ethereum with 10x lower fees.",
+      "related": []
+    },
+    {
+      "term": "Multisig (Multi-signature)",
+      "term_ru": "Мультиподпись",
+      "category": "crypto",
+      "definition": "Механизм безопасности, требующий нескольких подписей приватных ключей для авторизации криптовалютной транзакции, снижая риск единой точки отказа.",
+      "example": "The treasury wallet requires 3-of-5 multisig approval for any withdrawal.",
+      "related": []
+    },
+    {
+      "term": "MPC wallet (Multi-Party Computation)",
+      "term_ru": "MPC-кошелёк",
+      "category": "crypto",
+      "definition": "Кошелёк с распределённой генерацией ключей, где доли приватного ключа разделены между несколькими сторонами для подписания без восстановления полного ключа.",
+      "example": "MPC wallets offer institutional-grade security while maintaining operational flexibility.",
+      "related": []
+    }
+  ]
+}

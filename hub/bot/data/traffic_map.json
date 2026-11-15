@@ -1,0 +1,159 @@
+{
+  "verticals": [
+    {
+      "vertical": "gambling",
+      "name_ru": "Гемблинг",
+      "top_geos": [
+        {"country": "UK", "share": "18%", "avg_deposit": "$45", "notes": "Крупнейший регулируемый рынок. UKGC-лицензия обязательна. Высокая конкуренция, дорогой трафик. Средний LTV игрока — $200-400."},
+        {"country": "Germany", "share": "12%", "avg_deposit": "$55", "notes": "Новая регуляция GlüStV 2021. Ограничения на слоты (EUR 1 макс ставка). Растущий рынок."},
+        {"country": "Brazil", "share": "10%", "avg_deposit": "$25", "notes": "Взрывной рост с 2023. Регуляция с 2024. PIX — основной метод оплаты. Низкий чек, высокий объём."},
+        {"country": "India", "share": "8%", "avg_deposit": "$15", "notes": "Огромный рынок, но правовая серая зона. Крикет-беттинг доминирует. UPI/Paytm для депозитов."},
+        {"country": "Canada", "share": "7%", "avg_deposit": "$60", "notes": "Провинциальное регулирование (Ontario iGaming с 2022). Высокий средний чек."},
+        {"country": "Australia", "share": "6%", "avg_deposit": "$50", "notes": "Строгая регуляция, запрет онлайн-казино (только беттинг). Высокий LTV."},
+        {"country": "Philippines", "share": "5%", "avg_deposit": "$20", "notes": "PAGCOR-лицензия. Большой рынок оффшорных операторов (POGO). Местные и международные игроки."},
+        {"country": "Nigeria", "share": "4%", "avg_deposit": "$10", "notes": "Быстрорастущий рынок беттинга. Мобильные ставки доминируют. Низкий чек, огромная аудитория."}
+      ],
+      "traffic_sources": ["SEO (обзоры казино, рейтинги)", "PPC (Google Ads ограничен, Bing)", "Affiliate-сети (Income Access, Optimise)", "Стримеры (Twitch, YouTube, Kick)", "Telegram-каналы и группы", "Push-уведомления", "Нативная реклама"],
+      "avg_check": "$30-80",
+      "conversion_rate": "3-8%",
+      "payment_methods": ["Visa/Mastercard", "E-wallets (Skrill, Neteller, MiFinity)", "Crypto (BTC, USDT, ETH)", "Bank transfer / Open Banking", "Paysafecard / prepaid", "PIX (Бразилия)", "UPI (Индия)"],
+      "seasonality": "Пики во время крупных спортивных событий: Super Bowl (февраль), March Madness (март), Чемпионаты Европы/Мира (лето чётных годов), начало европейских лиг (август-сентябрь), NFL сезон (сентябрь-февраль). Казино — пики на праздники (Новый Год, Рождество).",
+      "notes": "Гемблинг — одна из самых доходных, но сложных вертикалей для процессинга. Средняя комиссия эквайера 3-7% + rolling reserve 5-10%. Чарджбеки — главная проблема (friendly fraud). Лицензия обязательна в большинстве юрисдикций (UKGC, MGA, Curacao, Kahnawake). Мульти-MID стратегия обязательна при объёмах $100K+/мес. Основные PSP: Nuvei, Paysafe, Checkout.com. Крипто-процессинг через CoinsPaid. Retention важнее acquisition — фокус на LTV."
+    },
+    {
+      "vertical": "crypto",
+      "name_ru": "Криптовалюты",
+      "top_geos": [
+        {"country": "USA", "share": "22%", "avg_deposit": "$500", "notes": "Крупнейший рынок. Coinbase, Kraken, Gemini. Строгая регуляция SEC/FinCEN. Высокий средний чек."},
+        {"country": "South Korea", "share": "10%", "avg_deposit": "$300", "notes": "Один из самых активных рынков. Upbit, Bithumb доминируют. Регуляция ужесточается."},
+        {"country": "Nigeria", "share": "8%", "avg_deposit": "$50", "notes": "P2P-торговля доминирует из-за ограничений ЦБ. Крипто = способ обойти валютный контроль."},
+        {"country": "India", "share": "7%", "avg_deposit": "$100", "notes": "30% налог на крипто-прибыль (с 2022). WazirX, CoinDCX. Несмотря на налоги — рынок растёт."},
+        {"country": "Turkey", "share": "6%", "avg_deposit": "$150", "notes": "Высокая инфляция лиры → бегство в крипто. USDT популярнее BTC. Binance TR доминирует."},
+        {"country": "Brazil", "share": "6%", "avg_deposit": "$200", "notes": "Топ-10 по крипто-адопции. Mercado Bitcoin — крупнейшая латам-биржа. PIX для фиат on-ramp."},
+        {"country": "UK", "share": "5%", "avg_deposit": "$400", "notes": "FCA-регуляция. Ограниченные крипто-деривативы для розничных клиентов. Высокий средний чек."},
+        {"country": "Russia/CIS", "share": "5%", "avg_deposit": "$200", "notes": "Санкции ограничили доступ к западным биржам. P2P через Binance/Bybit. Garantex под OFAC-санкциями."}
+      ],
+      "traffic_sources": ["SEO (обзоры бирж, гайды)", "Twitter/X (крипто-инфлюенсеры)", "YouTube (обучение, аналитика)", "Telegram (сигналы, каналы)", "Reddit (r/cryptocurrency)", "Affiliate-программы бирж", "Referral-программы"],
+      "avg_check": "$100-500",
+      "conversion_rate": "2-5%",
+      "payment_methods": ["Bank transfer / SEPA / Wire", "Credit/Debit cards (Visa, MC)", "Apple Pay / Google Pay", "P2P (Binance P2P, Paxful)", "E-wallets (PayPal, Skrill)", "Open Banking (Trustly, Plaid)"],
+      "seasonality": "Цикличность привязана к Bitcoin halving (каждые ~4 года). Исторически: Q4 и Q1 — сильнейшие кварталы в бычьем цикле. 'Uptober' (октябрь) часто позитивен. Лето — низкие объёмы. Крупные события: ETF-одобрения, halving, крупные хаки — вызывают всплески объёмов.",
+      "notes": "Крипто-вертикаль требует специфического процессинга: fiat on-ramp (MoonPay, Transak, Simplex) + крипто-процессинг (CoinsPaid, NOWPayments). Регуляция стремительно меняется — MiCA в ЕС, новые правила SEC. Основные риски для процессинга: волатильность, регуляторные изменения, хакерские атаки. KYC/AML обязателен во всех крупных юрисдикциях. Travel Rule расширяется глобально. Средняя комиссия on-ramp: 1.5-5%."
+    },
+    {
+      "vertical": "forex",
+      "name_ru": "Форекс / CFD",
+      "top_geos": [
+        {"country": "UK", "share": "15%", "avg_deposit": "$2000", "notes": "FCA-регуляция. Самый зрелый рынок. City Index, IG Group, CMC Markets. Высокий средний депозит."},
+        {"country": "Australia", "share": "10%", "avg_deposit": "$1500", "notes": "ASIC-регуляция, ужесточение с 2021 (ограничение плеча до 1:30). Pepperstone, IC Markets."},
+        {"country": "Cyprus/EU", "share": "12%", "avg_deposit": "$1000", "notes": "CySEC — основной регулятор для EU-брокеров. Многие брокеры зарегистрированы на Кипре."},
+        {"country": "South Africa", "share": "8%", "avg_deposit": "$500", "notes": "FSCA-регуляция. Растущий рынок. Много оффшорных брокеров таргетируют ЮАР."},
+        {"country": "UAE", "share": "7%", "avg_deposit": "$3000", "notes": "DFSA (Dubai), ADGM. Премиальная аудитория. Высокий средний депозит. Исламские счета."},
+        {"country": "Malaysia", "share": "5%", "avg_deposit": "$300", "notes": "SC Malaysia регуляция. Растущий рынок розничного форекса. Много нелицензированных брокеров."},
+        {"country": "Nigeria", "share": "5%", "avg_deposit": "$200", "notes": "Нерегулируемый рынок. Огромный спрос на форекс-обучение и сигналы. Низкий средний депозит."},
+        {"country": "India", "share": "4%", "avg_deposit": "$500", "notes": "SEBI ограничивает форекс-трейдинг (только INR-пары). Многие торгуют через оффшорных брокеров."}
+      ],
+      "traffic_sources": ["SEO (обзоры брокеров, обучающие статьи)", "PPC (Google Ads — строгие правила для финансов)", "Affiliate-сети (FinanceAds, TradeTracker)", "YouTube (обучение трейдингу, live trading)", "Telegram (сигналы, обучение)", "Вебинары и обучающие курсы", "Introducing Brokers (IB)"],
+      "avg_check": "$500-3000",
+      "conversion_rate": "1-4%",
+      "payment_methods": ["Bank wire / SEPA", "Credit/Debit cards", "E-wallets (Skrill, Neteller, FasaPay)", "Crypto (USDT популярен)", "Local payment methods", "Perfect Money, WebMoney"],
+      "seasonality": "Волатильность рынков = больше трейдеров. Январь — медленный старт. Февраль-март — активный сезон. Лето (июль-август) — затишье, отпуска трейдеров. Сентябрь-ноябрь — пик активности. Декабрь — спад к праздникам. Заседания центробанков (FOMC, ECB) и NFP — мини-пики депозитов.",
+      "notes": "Форекс — высоко-маржинальная вертикаль с высоким LTV ($2000-10000). Процессинг сложный из-за регуляторных ограничений (MCC 6211). Многие банки-эквайреры отказывают или требуют лицензию. Основные PSP: Nuvei, Paysafe (Skrill/Neteller), Checkout.com, ECOMMPAY. Оффшорные брокеры используют оффшорные MID (Belize, SVG, Vanuatu). Чарджбеки — проблема из-за потерь клиентов. Introducing Broker (IB) модель — основной канал привлечения."
+    },
+    {
+      "vertical": "adult",
+      "name_ru": "Адалт (18+)",
+      "top_geos": [
+        {"country": "USA", "share": "35%", "avg_deposit": "$30", "notes": "Крупнейший рынок. Строгие правила age verification. Visa/MC ужесточают требования после скандала с PornHub (2020)."},
+        {"country": "UK", "share": "12%", "avg_deposit": "$25", "notes": "Online Safety Act (2023) — обязательная верификация возраста. Высокие комиссии."},
+        {"country": "Germany", "share": "8%", "avg_deposit": "$20", "notes": "JMStV — строгая верификация возраста. Большой рынок, но сложный комплайнс."},
+        {"country": "France", "share": "6%", "avg_deposit": "$20", "notes": "ARCOM ужесточает контроль. Высокий спрос, растущие регуляторные барьеры."},
+        {"country": "Japan", "share": "5%", "avg_deposit": "$35", "notes": "Специфический рынок со своими стандартами. Высокий средний чек. Культурные особенности."},
+        {"country": "Brazil", "share": "4%", "avg_deposit": "$15", "notes": "Растущий рынок. PIX для оплаты. Относительно либеральное регулирование."}
+      ],
+      "traffic_sources": ["SEO (органический трафик)", "Tubes (бесплатный контент → premium)", "Affiliate-программы (CPA/RevShare)", "Ad networks (TrafficJunky, ExoClick, EroAdvertising)", "Social media (Twitter/X — единственная крупная платформа)", "Reddit", "Direct traffic (бренд)"],
+      "avg_check": "$15-40",
+      "conversion_rate": "1-3%",
+      "payment_methods": ["Credit/Debit cards (основной метод)", "E-wallets", "Crypto (растущая доля после ограничений Visa/MC)", "Direct carrier billing", "Prepaid cards"],
+      "seasonality": "Относительно стабильная вертикаль. Небольшие пики: новогодние праздники, зимние месяцы. Лето — лёгкий спад. Значительных сезонных колебаний нет — спрос постоянный.",
+      "notes": "Адалт — одна из самых сложных вертикалей для процессинга. После Mastercard BRAM program (2021) и Visa VAMP — требуется content moderation, age verification, consent documentation. Комиссии 7-12%. Rolling reserve 10%+. Основные биллеры: CCBill, Epoch, Segpay, Vendo, CentroBill. Крипто-платежи растут как альтернатива после ограничений карточных систем. MCC 5967. Мульти-MID обязателен для объёмов $50K+/мес. Чарджбек-менеджмент критичен."
+    },
+    {
+      "vertical": "dating",
+      "name_ru": "Дейтинг",
+      "top_geos": [
+        {"country": "USA", "share": "30%", "avg_deposit": "$40", "notes": "Крупнейший рынок. Tinder, Bumble, Hinge доминируют. Высокая конкуренция, дорогой трафик."},
+        {"country": "UK", "share": "10%", "avg_deposit": "$35", "notes": "Второй рынок после US. Badoo исторически силён. Высокий ARPU."},
+        {"country": "Germany", "share": "7%", "avg_deposit": "$30", "notes": "Lovoo, Parship популярны. Высокое проникновение подписок."},
+        {"country": "France", "share": "6%", "avg_deposit": "$30", "notes": "Meetic (Match Group). Высокий LTV."},
+        {"country": "Japan", "share": "5%", "avg_deposit": "$50", "notes": "Уникальный рынок: Pairs, Tapple, with. Самый высокий ARPU. Строгие правила верификации."},
+        {"country": "Brazil", "share": "5%", "avg_deposit": "$15", "notes": "Badoo популярен. Tinder растёт. Низкий чек, высокий объём."},
+        {"country": "India", "share": "4%", "avg_deposit": "$10", "notes": "Быстрорастущий рынок. Shaadi, Bharatmatrimony (матримониальные), Tinder. Низкий чек."}
+      ],
+      "traffic_sources": ["App Store / Google Play (основной канал)", "Facebook/Instagram Ads", "PPC (Google Ads)", "SEO (обзоры дейтинг-приложений)", "Affiliate-сети (CrakRevenue для adult-dating)", "TikTok (для Gen Z)", "Influencer marketing"],
+      "avg_check": "$15-50",
+      "conversion_rate": "2-6%",
+      "payment_methods": ["In-app purchases (Apple/Google 30% комиссии)", "Credit/Debit cards (web-подписки)", "PayPal", "E-wallets", "Carrier billing (emerging markets)"],
+      "seasonality": "Cuffing season (сентябрь-ноябрь) — пик подписок. Январь — максимум регистраций (новогодние обещания). День Святого Валентина (февраль) — пик для одиноких. Лето — спад (оффлайн-знакомства). Воскресенье вечером — пик активности внутри недели.",
+      "notes": "Дейтинг делится на mainstream (Tinder, Bumble) и adult-dating (различные нишевые сайты). Mainstream работает через App Store (30% комиссия Apple/Google). Adult-dating — через веб с карточным биллингом (CCBill, CentroBill). Процессинг: mainstream — стандартный (Stripe, Braintree), adult-dating — high-risk (те же биллеры что adult). Subscription модель доминирует. Trial-подписки + auto-renewal — основная модель монетизации. Чарджбеки умеренные (1-2%) для mainstream."
+    },
+    {
+      "vertical": "nutra",
+      "name_ru": "Нутра (БАДы, здоровье, красота)",
+      "top_geos": [
+        {"country": "USA", "share": "40%", "avg_deposit": "$60", "notes": "Крупнейший рынок БАДов в мире ($50B+). FDA не регулирует БАДы как лекарства. Trial + subscription модель."},
+        {"country": "UK", "share": "8%", "avg_deposit": "$45", "notes": "Растущий рынок. Строгие правила ASA по рекламе. Royal Mail для доставки."},
+        {"country": "Canada", "share": "7%", "avg_deposit": "$55", "notes": "Health Canada регуляция. NPN (Natural Product Number) обязателен. Высокий средний чек."},
+        {"country": "Australia", "share": "5%", "avg_deposit": "$50", "notes": "TGA регуляция. Строгие правила по рекламе. Высокий LTV."},
+        {"country": "Germany", "share": "5%", "avg_deposit": "$40", "notes": "Крупнейший рынок в ЕС. Строгие правила маркировки. Высокая конверсия."},
+        {"country": "Brazil", "share": "4%", "avg_deposit": "$25", "notes": "Растущий рынок. ANVISA регуляция. Boleto/PIX для оплаты."},
+        {"country": "Japan", "share": "4%", "avg_deposit": "$45", "notes": "Культура здоровья. Высокий ARPU. Специфические продукты (коллаген, ферменты)."}
+      ],
+      "traffic_sources": ["Facebook/Instagram Ads (основной канал)", "Native advertising (Taboola, Outbrain, MGID)", "SEO (обзоры продуктов, лендинги)", "Google Ads (Shopping, PPC)", "Email marketing (ретаргетинг)", "Push-уведомления", "Affiliate-сети (ClickBank, MaxBounty, CJ)"],
+      "avg_check": "$40-80",
+      "conversion_rate": "2-5%",
+      "payment_methods": ["Credit/Debit cards (основной)", "PayPal", "COD (Cash on Delivery — популярен в Азии и Латам)", "Bank transfer", "Apple Pay / Google Pay"],
+      "seasonality": "Январь — абсолютный пик (новогодние обещания, ЗОЖ). Февраль-май — сильный сезон (подготовка к лету). Лето — спад (люди на отдыхе). Сентябрь — второй пик (возвращение к рутине). Q4 — подарочные наборы к праздникам.",
+      "notes": "Нутра — одна из самых маржинальных вертикалей (COGS 10-20%, маржа 70-80%). Основная модель: trial offer ($4.95 за доставку) → auto-subscription ($60-80/мес). Процессинг сложный из-за высоких чарджбеков (trial → забыл отменить → чарджбек). Средний CB rate 2-4%. Необходим descriptor management, чтобы клиент узнал списание. Мульти-MID обязателен. Основные PSP: Stripe (для белых офферов), Emerchantview, iPayTotal (для aggressive offers). FTC в США активно преследует нутра-компании за deceptive practices."
+    },
+    {
+      "vertical": "ecommerce",
+      "name_ru": "E-commerce (интернет-торговля)",
+      "top_geos": [
+        {"country": "China", "share": "25%", "avg_deposit": "$80", "notes": "Крупнейший рынок e-commerce ($2T+). Tmall, JD.com, Pinduoduo. Alipay и WeChat Pay доминируют."},
+        {"country": "USA", "share": "20%", "avg_deposit": "$100", "notes": "Amazon доминирует (40% рынка). Shopify-магазины. Карты — основной метод. BNPL растёт."},
+        {"country": "UK", "share": "8%", "avg_deposit": "$70", "notes": "Высокое проникновение e-commerce (30%+ от ритейла). Amazon UK, ASOS, Argos."},
+        {"country": "Germany", "share": "6%", "avg_deposit": "$75", "notes": "Крупнейший рынок e-commerce в ЕС. Otto, Zalando. SEPA/Sofort популярны. Возвраты — норма."},
+        {"country": "Japan", "share": "5%", "avg_deposit": "$60", "notes": "Rakuten, Amazon JP. Конбини-оплата (7-Eleven). Высокий LTV."},
+        {"country": "South Korea", "share": "4%", "avg_deposit": "$50", "notes": "Coupang доминирует. Высокое проникновение мобильных покупок. KakaoPay."},
+        {"country": "India", "share": "4%", "avg_deposit": "$25", "notes": "Flipkart, Amazon India. COD = 40%+ всех заказов. UPI растёт. Низкий чек, огромный объём."},
+        {"country": "Brazil", "share": "3%", "avg_deposit": "$35", "notes": "Mercado Libre доминирует. PIX и Boleto — основные методы. Installments (parcelas) — стандарт."}
+      ],
+      "traffic_sources": ["Google Shopping / PPC", "Facebook/Instagram Ads", "SEO (продуктовые страницы, блоги)", "Marketplaces (Amazon, eBay, Etsy)", "Email marketing", "TikTok Shop", "Influencer marketing", "Referral программы"],
+      "avg_check": "$30-100",
+      "conversion_rate": "2-4%",
+      "payment_methods": ["Credit/Debit cards (Visa, MC, Amex)", "PayPal", "BNPL (Klarna, Afterpay, Affirm)", "Apple Pay / Google Pay", "Bank transfer / SEPA / Open Banking", "COD (Cash on Delivery — Азия, MENA)", "Alipay / WeChat Pay (Китай)", "PIX / Boleto (Бразилия)", "iDEAL (Нидерланды)", "Bancontact (Бельгия)"],
+      "seasonality": "Q4 — абсолютный пик (40%+ годового оборота): Singles Day (11.11), Black Friday, Cyber Monday, Рождество. Январь — спад + возвраты. Февраль — День Святого Валентина. Март — 8 Марта (СНГ). Лето — умеренный спад. Back-to-school (август-сентябрь). Prime Day (июль).",
+      "notes": "E-commerce — самая массовая вертикаль для процессинга. Low-risk (MCC 5411-5999), все PSP работают. Комиссии 1.5-3%. Rolling reserve обычно не требуется. Основной вызов — оптимизация конверсии checkout (каждый дополнительный шаг = -10% конверсии). Локальные методы оплаты критичны: iDEAL в NL конвертирует в 3x лучше карт. BNPL увеличивает AOV на 30-50%. 3DS2 обязателен в ЕС (PSD2/SCA). Мультивалютность и DCC (Dynamic Currency Conversion) увеличивают конверсию для cross-border."
+    },
+    {
+      "vertical": "travel",
+      "name_ru": "Тревел (путешествия, авиабилеты, отели)",
+      "top_geos": [
+        {"country": "USA", "share": "25%", "avg_deposit": "$350", "notes": "Крупнейший рынок. Expedia, Booking.com, Airbnb. Карты доминируют. Высокий средний чек."},
+        {"country": "China", "share": "15%", "avg_deposit": "$200", "notes": "Trip.com (Ctrip), Fliggy (Alibaba). Alipay/WeChat Pay. Внутренний туризм огромен."},
+        {"country": "UK", "share": "8%", "avg_deposit": "$300", "notes": "Booking.com, Skyscanner (UK-based). Высокий outbound tourism. Карты + BNPL."},
+        {"country": "Germany", "share": "6%", "avg_deposit": "$280", "notes": "Крупнейший outbound tourism в ЕС. TUI, Check24. Банковские переводы популярны."},
+        {"country": "India", "share": "5%", "avg_deposit": "$100", "notes": "MakeMyTrip, Goibibo. Быстрорастущий рынок. EMI (рассрочка) популярна для авиабилетов."},
+        {"country": "Japan", "share": "4%", "avg_deposit": "$250", "notes": "Rakuten Travel, Jalan. Конбини-оплата. Высокий inbound tourism (50M+ туристов/год)."},
+        {"country": "UAE", "share": "3%", "avg_deposit": "$500", "notes": "Премиальная аудитория. Высокий средний чек. Wego, Almosafer."}
+      ],
+      "traffic_sources": ["Google Ads (Flights, Hotels)", "SEO (направления, обзоры отелей)", "Metasearch (Google Flights, Skyscanner, Kayak, Trivago)", "OTA affiliate программы", "Email marketing (loyalty programs)", "Social media (Instagram — визуальный контент)", "Retargeting"],
+      "avg_check": "$150-500",
+      "conversion_rate": "1-3%",
+      "payment_methods": ["Credit/Debit cards (основной)", "PayPal", "BNPL (Klarna, Affirm — для дорогих поездок)", "Bank transfer / SEPA", "Apple Pay / Google Pay", "Alipay / WeChat Pay (китайские туристы)", "Virtual cards (B2B)"],
+      "seasonality": "Бронирования: январь-март (летний отпуск), сентябрь (зимние каникулы). Пиковые сезоны поездок: лето (июнь-август) и новогодние праздники (декабрь-январь). Black Friday/Cyber Monday — растущий тренд распродаж. Shoulder season (апрель-май, сентябрь-октябрь) — ценовые промо.",
+      "notes": "Тревел — вертикаль с высоким средним чеком и сложным процессингом: множество валют, авансовые платежи, длительный цикл (бронирование за месяцы до поездки). Чарджбеки возрастают во время кризисов (COVID-19 показал уязвимость). MCC 4511 (авиа), 7011 (отели). Комиссии 1.5-2.5%. Мультивалютный процессинг обязателен. DCC спорен — лучше settlement в локальной валюте. Installments (рассрочка) — растущий тренд, особенно для дорогих бронирований. B2B-сегмент (TMC) использует virtual cards и lodge cards."
+    }
+  ]
+}

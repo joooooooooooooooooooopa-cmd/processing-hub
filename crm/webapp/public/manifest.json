@@ -1,0 +1,18 @@
+{
+  "name": "ProcessingHub",
+  "short_name": "ProcessingHub",
+  "description": "CRM для управления мерчантами и трейдерами",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

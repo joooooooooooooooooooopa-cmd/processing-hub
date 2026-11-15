@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+rates_index.npz
+rates_meta.json
+.DS_Store
+venv/
+*.xlsx
+*backup*

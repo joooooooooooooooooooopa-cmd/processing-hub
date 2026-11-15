@@ -1,0 +1,39 @@
+# Environment
+.env
+*.session
+*.session-journal
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Keys and secrets
+access_keys.json
+sent_alerts.json
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+/test_*.py
+*.pyc
+__pycache__/
+test_chart.png

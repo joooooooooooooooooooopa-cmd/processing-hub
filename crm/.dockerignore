@@ -1,0 +1,17 @@
+node_modules
+webapp/node_modules
+webapp/dist
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.sql
+*.session
+*.md
+__pycache__
+.git
+.env
+bot-service
+merchants_seed.json
+test_*.py
+create_*.py

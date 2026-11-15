@@ -1,0 +1,18 @@
+FROM node:20-slim AS frontend-builder
+WORKDIR /app/webapp
+COPY webapp/package*.json ./
+RUN npm ci
+COPY webapp/ ./
+RUN npm run build
+
+FROM python:3.11-slim
+WORKDIR /app
+
+COPY requirements-api.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+COPY --from=frontend-builder /app/webapp/dist ./webapp/dist
+
+EXPOSE $PORT
+CMD uvicorn api:app --host 0.0.0.0 --port ${PORT:-8000} --workers 2 --timeout-keep-alive 30

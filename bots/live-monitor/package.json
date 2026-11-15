@@ -1,0 +1,13 @@
+{
+  "name": "live-monitor",
+  "version": "2.0.2",
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs",
+    "bot": "node index.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "telegraf": "^4.16.3"
+  }
+}

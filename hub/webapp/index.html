@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ProcessingHub</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header id="header">
+            <h1>ProcessingHub</h1>
+            <p class="subtitle">Справочник платёжного процессинга</p>
+        </header>
+
+        <nav id="nav" class="tabs">
+            <button class="tab active" data-page="home">🏠</button>
+            <button class="tab" data-page="glossary">📖</button>
+            <button class="tab" data-page="countries">🌍</button>
+            <button class="tab" data-page="calendar">📅</button>
+            <button class="tab" data-page="acquirers">🏦</button>
+        </nav>
+
+        <!-- Home Page -->
+        <div id="page-home" class="page active">
+            <div class="card-grid">
+                <div class="card" data-page="glossary">
+                    <span class="card-icon">📖</span>
+                    <span class="card-title">Глоссарий</span>
+                    <span class="card-desc">200+ терминов</span>
+                </div>
+                <div class="card" data-page="countries">
+                    <span class="card-icon">🌍</span>
+                    <span class="card-title">Страны</span>
+                    <span class="card-desc">190+ стран</span>
+                </div>
+                <div class="card" data-page="calendar">
+                    <span class="card-icon">📅</span>
+                    <span class="card-title">Календарь</span>
+                    <span class="card-desc">Сезонность</span>
+                </div>
+                <div class="card" data-page="acquirers">
+                    <span class="card-icon">🏦</span>
+                    <span class="card-title">Эквайеры</span>
+                    <span class="card-desc">50+ компаний</span>
+                </div>
+                <div class="card" onclick="Telegram.WebApp.sendData('open_bin')">
+                    <span class="card-icon">💳</span>
+                    <span class="card-title">BIN Checker</span>
+                    <span class="card-desc">Проверка карт</span>
+                </div>
+                <div class="card" onclick="Telegram.WebApp.sendData('open_news')">
+                    <span class="card-icon">📰</span>
+                    <span class="card-title">Новости</span>
+                    <span class="card-desc">Индустрия</span>
+                </div>
+                <div class="card" onclick="Telegram.WebApp.sendData('open_platforms')">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-title">Площадки</span>
+                    <span class="card-desc">30+ платформ</span>
+                </div>
+                <div class="card" onclick="Telegram.WebApp.sendData('open_aml')">
+                    <span class="card-icon">🛡</span>
+                    <span class="card-title">AML</span>
+                    <span class="card-desc">Compliance</span>
+                </div>
+                <div class="card" onclick="Telegram.WebApp.sendData('open_traffic')">
+                    <span class="card-icon">📊</span>
+                    <span class="card-title">Трафик</span>
+                    <span class="card-desc">Карта потоков</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Glossary Page -->
+        <div id="page-glossary" class="page">
+            <div class="search-bar">
+                <input type="text" id="glossary-search" placeholder="Поиск термина...">
+            </div>
+            <div class="filter-chips" id="glossary-categories"></div>
+            <div id="glossary-list" class="list"></div>
+        </div>
+
+        <!-- Countries Page -->
+        <div id="page-countries" class="page">
+            <div class="search-bar">
+                <input type="text" id="country-search" placeholder="Поиск страны...">
+            </div>
+            <div class="filter-chips" id="country-regions"></div>
+            <div id="country-list" class="list"></div>
+            <div id="country-detail" class="detail hidden"></div>
+        </div>
+
+        <!-- Calendar Page -->
+        <div id="page-calendar" class="page">
+            <div class="month-grid" id="month-grid"></div>
+            <div id="calendar-detail" class="detail"></div>
+        </div>
+
+        <!-- Acquirers Page -->
+        <div id="page-acquirers" class="page">
+            <div class="search-bar">
+                <input type="text" id="acquirer-search" placeholder="Поиск эквайера...">
+            </div>
+            <div class="filter-chips" id="acquirer-filters"></div>
+            <div id="acquirer-list" class="list"></div>
+            <div id="acquirer-detail" class="detail hidden"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
